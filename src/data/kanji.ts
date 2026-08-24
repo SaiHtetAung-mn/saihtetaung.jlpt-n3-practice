@@ -8,11 +8,15 @@ export type KanjiCard = {
   id: number;
   character: string;
   meaning: string;
+  myanmarMeaning: string;
   readings: string;
   example: string;
   exampleMeaning: string;
   words: UsageWord[];
   category: string;
+  week?: number;
+  day?: number;
+  lesson?: string;
 };
 
 export const kanjiCards: KanjiCard[] = [
@@ -40,7 +44,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "Japanese flag"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "စက်ဝိုင်း၊ ဝိုင်းသော၊ ပြီးပြည့်စုံသော"
   },
   {
     "id": 2,
@@ -66,7 +71,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "long-standing"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အချိန်ကြာ၊ ကြာရှည်သော"
   },
   {
     "id": 3,
@@ -92,7 +98,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "eighteen years old"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အရည်အချင်း၊ စွမ်းရည်၊ အသက်"
   },
   {
     "id": 4,
@@ -118,7 +125,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to pay"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 2",
+    "myanmarMeaning": "ထောက်ပံ့/ထောက်ခံသည်၊ ထိန်းသိမ်းသည်၊ အကိုင်း/ဌာနခွဲ",
+    "week": 4,
+    "day": 2,
+    "lesson": "広告メール"
   },
   {
     "id": 5,
@@ -144,7 +155,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "detached house"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "တံခါး၊ အိမ်ထောင်စု"
   },
   {
     "id": 6,
@@ -170,7 +182,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "weak point"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 6",
+    "myanmarMeaning": "လိုအပ်ချက်၊ မရှိ/လိုနေသည်၊ ပျက်ကွက်ခြင်း",
+    "week": 6,
+    "day": 6,
+    "lesson": "政治"
   },
   {
     "id": 7,
@@ -196,7 +212,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "queen"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဘုရင်၊ အုပ်ချုပ်သူ"
   },
   {
     "id": 8,
@@ -222,7 +239,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "culture"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 5",
+    "myanmarMeaning": "ပြောင်းလဲသည်၊ ပြောင်းလဲစေသည်",
+    "week": 6,
+    "day": 5,
+    "lesson": "地球温暖化"
   },
   {
     "id": 9,
@@ -248,7 +269,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "domestic"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 1",
+    "myanmarMeaning": "အတွင်းပိုင်း၊ အတွင်း",
+    "week": 2,
+    "day": 1,
+    "lesson": "レストラン"
   },
   {
     "id": 10,
@@ -274,7 +299,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "violation"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဆန့်ကျင်သည်၊ ပြောင်းပြန်၊ ဆန့်ကျင်သော"
   },
   {
     "id": 11,
@@ -300,7 +326,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "ratio"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 5",
+    "myanmarMeaning": "နှိုင်းယှဉ်သည်၊ အချိုး",
+    "week": 6,
+    "day": 5,
+    "lesson": "地球温暖化"
   },
   {
     "id": 12,
@@ -326,7 +356,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "ingenuity"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ခင်ပွန်း၊ ယောက်ျား"
   },
   {
     "id": 13,
@@ -352,7 +383,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "Great Buddha"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဗုဒ္ဓ၊ ဗုဒ္ဓဘာသာ"
   },
   {
     "id": 14,
@@ -378,7 +410,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "head hair"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဆံပင်/အမွေး၊ အမွေး"
   },
   {
     "id": 15,
@@ -404,7 +437,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "preparation for a lesson"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 1",
+    "myanmarMeaning": "ကြိုတင်၊ အစီအစဉ်၊ ခန့်မှန်းချက်",
+    "week": 2,
+    "day": 1,
+    "lesson": "レストラン"
   },
   {
     "id": 16,
@@ -430,7 +467,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "via"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 5",
+    "myanmarMeaning": "အကြောင်းပြချက်၊ မူလရင်းမြစ်၊ နည်းလမ်း",
+    "week": 1,
+    "day": 5,
+    "lesson": "特急電車"
   },
   {
     "id": 17,
@@ -456,7 +497,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "incomplete"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "မပြီးသေးသော၊ အနာဂတ်၊ မပြီးပြည့်စုံသော"
   },
   {
     "id": 18,
@@ -482,7 +524,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "distribution"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အဝတ်စ၊ အထည်၊ ဖြန့်သည်"
   },
   {
     "id": 19,
@@ -508,7 +551,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "parcel"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ထုပ်သည်၊ ထုပ်ပိုးမှု၊ ပါဝင်သည်"
   },
   {
     "id": 20,
@@ -534,7 +578,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": ""
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အဆုံး၊ အစွန်း၊ အနာဂတ်"
   },
   {
     "id": 21,
@@ -560,7 +605,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "average"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ပြားသော၊ ငြိမ်းချမ်းသော၊ ပျမ်းမျှ"
   },
   {
     "id": 22,
@@ -586,7 +632,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "seaside"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဧရိယာ၊ ဘက်/နံဘေး၊ အနီးဝန်းကျင်"
   },
   {
     "id": 23,
@@ -612,7 +659,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "freezing point"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 3",
+    "myanmarMeaning": "ရေခဲ",
+    "week": 3,
+    "day": 3,
+    "lesson": "自動販売機"
   },
   {
     "id": 24,
@@ -638,7 +689,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "tidy up"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 5",
+    "myanmarMeaning": "ပူးတွဲသည်၊ ထည့်သည်၊ အတူလိုက်ပါသည်",
+    "week": 2,
+    "day": 5,
+    "lesson": "病院"
   },
   {
     "id": 25,
@@ -664,7 +719,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "fur"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အရေပြား၊ ဖုံးကွယ်သည်၊ အခွံခွာသည်"
   },
   {
     "id": 26,
@@ -690,7 +746,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to commit"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ရာဇဝတ်မှု၊ ကျူးလွန်သူ၊ ကျူးလွန်သည်"
   },
   {
     "id": 27,
@@ -716,7 +773,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "desperate"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 1",
+    "myanmarMeaning": "သေချာသော၊ လိုအပ်သော၊ မပျက်မကွက်",
+    "week": 3,
+    "day": 1,
+    "lesson": "要冷蔵"
   },
   {
     "id": 28,
@@ -742,7 +803,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "petroleum"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ကျောက်တုံး၊ ကျောက်"
   },
   {
     "id": 29,
@@ -768,7 +830,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "besides that"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အခြား၊ အခြား"
   },
   {
     "id": 30,
@@ -794,7 +857,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "batter"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ထိမှန်သည်၊ ရိုက်သည်၊ အမျိုးအစား"
   },
   {
     "id": 31,
@@ -820,7 +884,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "processing"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ထည့်သည်၊ ပါဝင်သည်၊ တိုးသည်"
   },
   {
     "id": 32,
@@ -846,7 +911,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "approval of a proposal"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဖြစ်နိုင်သော၊ ခွင့်ပြုထားသော၊ လက်ခံနိုင်သော"
   },
   {
     "id": 33,
@@ -872,7 +938,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "central exit"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အလယ်ဗဟို၊ အလယ်"
   },
   {
     "id": 34,
@@ -898,7 +965,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "publication"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ထုတ်ဝေသည်၊ ထုတ်ဝေမှု"
   },
   {
     "id": 35,
@@ -924,7 +992,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "eyeball or main attraction"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဘောလုံး၊ ရတနာ၊ ပုတီးလုံး"
   },
   {
     "id": 36,
@@ -950,7 +1019,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "former surname"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဟောင်းသော၊ ယခင်"
   },
   {
     "id": 37,
@@ -976,7 +1046,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "number one"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 2",
+    "myanmarMeaning": "နံပါတ်/အရေအတွက်၊ ထုတ်ဝေမှု/ကိစ္စ၊ သတ်မှတ်ချက်",
+    "week": 1,
+    "day": 2,
+    "lesson": "横断歩道"
   },
   {
     "id": 38,
@@ -1002,7 +1076,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "ashtray"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ပန်းကန်ပြား၊ ပန်းကန်"
   },
   {
     "id": 39,
@@ -1028,7 +1103,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "ticket gate"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "တံဆိပ်ကပ်စာ၊ အသိပေးစာ၊ ငွေစက္ကူ"
   },
   {
     "id": 40,
@@ -1054,7 +1130,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "Japanese history"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "သမိုင်း၊ မှတ်တမ်း"
   },
   {
     "id": 41,
@@ -1080,7 +1157,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "rudeness or excuse me"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 5 / Day 1",
+    "myanmarMeaning": "ရှုံး/ပျောက်ဆုံးသည်၊ မအောင်မြင်သည်၊ အမှား",
+    "week": 5,
+    "day": 1,
+    "lesson": "メールを送る"
   },
   {
     "id": 42,
@@ -1106,7 +1187,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "display"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 6",
+    "myanmarMeaning": "ပြသည်၊ ညွှန်ပြသည်",
+    "week": 3,
+    "day": 6,
+    "lesson": "携帯電話"
   },
   {
     "id": 43,
@@ -1132,7 +1217,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "application"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 4",
+    "myanmarMeaning": "နှိမ့်ချစွာပြောသည်၊ လျှောက်ထားသည်၊ အစီရင်ခံစာ",
+    "week": 4,
+    "day": 4,
+    "lesson": "申込書"
   },
   {
     "id": 44,
@@ -1158,7 +1247,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "rudeness or excuse me"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 5 / Day 1",
+    "myanmarMeaning": "ကျေးဇူးတင်ခြင်း၊ ဦးညွှတ်ခြင်း၊ အမူအကျင့်",
+    "week": 5,
+    "day": 1,
+    "lesson": "メールを送る"
   },
   {
     "id": 45,
@@ -1184,7 +1277,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "Reiwa era"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အစဉ်/အမိန့်၊ အမိန့်၊ ဥပဒေ"
   },
   {
     "id": 46,
@@ -1210,7 +1304,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "train"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အတန်း၊ လိုင်း/မျဉ်း၊ အစဉ်"
   },
   {
     "id": 47,
@@ -1236,7 +1331,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "later life"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အိုမင်းခြင်း၊ အိုမင်းလာသည်"
   },
   {
     "id": 48,
@@ -1262,7 +1358,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "entrance ceremony"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 2",
+    "myanmarMeaning": "အခမ်းအနား၊ စတိုင်၊ ဖော်မြူလာ",
+    "week": 1,
+    "day": 2,
+    "lesson": "横断歩道"
   },
   {
     "id": 49,
@@ -1288,7 +1388,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "Honshu"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အခြေအနေ/ပြည်နယ်၊ ပြည်နယ်"
   },
   {
     "id": 50,
@@ -1314,7 +1415,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "temple district"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 3",
+    "myanmarMeaning": "ဘုရားကျောင်း",
+    "week": 2,
+    "day": 3,
+    "lesson": "観光地図"
   },
   {
     "id": 51,
@@ -1340,7 +1445,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "table of contents"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 4",
+    "myanmarMeaning": "နောက်တစ်ခု၊ အစဉ်",
+    "week": 1,
+    "day": 4,
+    "lesson": "駅のホーム"
   },
   {
     "id": 52,
@@ -1366,7 +1475,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "defense"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 5",
+    "myanmarMeaning": "ကာကွယ်သည်၊ လိုက်နာသည်၊ စောင့်ကြည့်ကာကွယ်သည်",
+    "week": 3,
+    "day": 5,
+    "lesson": "コピー機・留守番電話"
   },
   {
     "id": 53,
@@ -1392,7 +1505,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "clue"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ချည်၊ ချည်မျှင်"
   },
   {
     "id": 54,
@@ -1418,7 +1532,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "being at home"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 6",
+    "myanmarMeaning": "တည်ရှိသည်၊ ရှိနေသည်",
+    "week": 4,
+    "day": 6,
+    "lesson": "不在通知"
   },
   {
     "id": 55,
@@ -1444,7 +1562,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "reuse"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 5",
+    "myanmarMeaning": "နောက်တစ်ကြိမ်၊ ထပ်လုပ်သည်",
+    "week": 3,
+    "day": 5,
+    "lesson": "コピー機・留守番電話"
   },
   {
     "id": 56,
@@ -1470,7 +1592,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "over there"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 1",
+    "myanmarMeaning": "ဦးတည်ရာ၊ မျက်နှာ၊ ဆီသို့",
+    "week": 1,
+    "day": 1,
+    "lesson": "駐車場"
   },
   {
     "id": 57,
@@ -1496,7 +1622,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "interaction"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 4",
+    "myanmarMeaning": "ရောသည်၊ ဖြတ်ဆုံသည်၊ ဆက်စပ်သည်",
+    "week": 2,
+    "day": 4,
+    "lesson": "街の地図"
   },
   {
     "id": 58,
@@ -1522,7 +1652,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "blood pressure"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "သွေး"
   },
   {
     "id": 59,
@@ -1548,7 +1679,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "incident"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 5",
+    "myanmarMeaning": "ကိစ္စ၊ ကိစ္စ၊ ပစ္စည်း",
+    "week": 3,
+    "day": 5,
+    "lesson": "コピー機・留守番電話"
   },
   {
     "id": 60,
@@ -1574,7 +1709,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "cooperation"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အတူတကွ၊ အများသုံး/တူညီသော"
   },
   {
     "id": 61,
@@ -1600,7 +1736,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "composition"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ကွေးသည်၊ ကွေးကောက်မှု၊ တေးသွား"
   },
   {
     "id": 62,
@@ -1626,7 +1763,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "various regions"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 4",
+    "myanmarMeaning": "တစ်ဦးစီ/အသီးသီး၊ တိုင်း",
+    "week": 1,
+    "day": 4,
+    "lesson": "駅のホーム"
   },
   {
     "id": 63,
@@ -1652,7 +1793,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "landmark"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အမှတ်အသား၊ တံဆိပ်၊ အမှတ်အသား"
   },
   {
     "id": 64,
@@ -1678,7 +1820,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to result from"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 5",
+    "myanmarMeaning": "အကြောင်းရင်း၊ အကြောင်းပြချက်",
+    "week": 6,
+    "day": 5,
+    "lesson": "地球温暖化"
   },
   {
     "id": 65,
@@ -1704,7 +1850,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "one bird"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ငှက်မွေး၊ တောင်ပံ"
   },
   {
     "id": 66,
@@ -1730,7 +1877,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "housing complex"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အုပ်စု၊ အသင်းအဖွဲ့"
   },
   {
     "id": 67,
@@ -1756,7 +1904,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "made of bamboo"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဝါး"
   },
   {
     "id": 68,
@@ -1782,7 +1931,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "close friend"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဆက်ဆံရေး၊ အဖော်"
   },
   {
     "id": 69,
@@ -1808,7 +1958,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "tooth decay"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ပိုးကောင်၊ ပိုးကောင်"
   },
   {
     "id": 70,
@@ -1834,7 +1985,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "one trillion"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အမှတ်အသား၊ နိမိတ်၊ ထရီလီယံ"
   },
   {
     "id": 71,
@@ -1860,7 +2012,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "advertising"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 6",
+    "myanmarMeaning": "ပို့လွှတ်သည်၊ ပြောပြ/ပို့ဆောင်သည်၊ ရိုးရာ",
+    "week": 2,
+    "day": 6,
+    "lesson": "困ったときは"
   },
   {
     "id": 72,
@@ -1886,7 +2042,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "person in charge"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 2",
+    "myanmarMeaning": "ထိမှန်သည်၊ ကိုက်ညီသည်၊ သင့်တော်သော",
+    "week": 2,
+    "day": 2,
+    "lesson": "禁煙"
   },
   {
     "id": 73,
@@ -1912,7 +2072,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "growth"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 4",
+    "myanmarMeaning": "ဖြစ်လာသည်၊ အောင်မြင်သည်၊ ပုံစံ",
+    "week": 6,
+    "day": 4,
+    "lesson": "経済"
   },
   {
     "id": 74,
@@ -1938,7 +2102,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "safety"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 2",
+    "myanmarMeaning": "တစ်ခုလုံး၊ အားလုံး၊ ပြီးပြည့်စုံသော",
+    "week": 2,
+    "day": 2,
+    "lesson": "禁煙"
   },
   {
     "id": 75,
@@ -1964,7 +2132,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "competition"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ယှဉ်ပြိုင်သည်၊ အငြင်းပွားမှု"
   },
   {
     "id": 76,
@@ -1990,7 +2159,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "duty"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အပ်နှံသည်၊ တာဝန်၊ တာဝန်ယူမှု"
   },
   {
     "id": 77,
@@ -2016,7 +2186,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "both hands"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 6",
+    "myanmarMeaning": "နှစ်ခုလုံး",
+    "week": 1,
+    "day": 6,
+    "lesson": "バス"
   },
   {
     "id": 78,
@@ -2042,7 +2216,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "convenient"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 2",
+    "myanmarMeaning": "အကျိုး၊ အကျိုးအမြတ်၊ အသုံးပြုမှု",
+    "week": 4,
+    "day": 2,
+    "lesson": "広告メール"
   },
   {
     "id": 79,
@@ -2068,7 +2246,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "extra"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ကျန်နေသည်၊ ပိုလျှံမှု၊ ပိုလျှံသော"
   },
   {
     "id": 80,
@@ -2094,7 +2273,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "prevention"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 6",
+    "myanmarMeaning": "ကာကွယ်သည်၊ ကာကွယ်သည်",
+    "week": 2,
+    "day": 6,
+    "lesson": "困ったときは"
   },
   {
     "id": 81,
@@ -2120,7 +2303,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to be useful"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 4",
+    "myanmarMeaning": "အခန်းကဏ္ဍ၊ တာဝန်၊ ဝန်ဆောင်မှု",
+    "week": 2,
+    "day": 4,
+    "lesson": "街の地図"
   },
   {
     "id": 82,
@@ -2146,7 +2333,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to repeat"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 3",
+    "myanmarMeaning": "ပြန်လာ/ပြန်ပေးသည်၊ ပြန်ကြားသည်",
+    "week": 3,
+    "day": 3,
+    "lesson": "自動販売機"
   },
   {
     "id": 83,
@@ -2172,7 +2363,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "trial"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဆုံးဖြတ်သည်၊ ဆုံးဖြတ်ချက်"
   },
   {
     "id": 84,
@@ -2198,7 +2390,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "prime minister"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အမှုထမ်း၊ ဝန်ကြီး"
   },
   {
     "id": 85,
@@ -2224,7 +2417,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "contents"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ခန္ဓာကိုယ်၊ မိမိကိုယ်တိုင်"
   },
   {
     "id": 86,
@@ -2250,7 +2444,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "bone fracture"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 5",
+    "myanmarMeaning": "ခေါက်သည်၊ ချိုးသည်",
+    "week": 2,
+    "day": 5,
+    "lesson": "病院"
   },
   {
     "id": 87,
@@ -2276,7 +2474,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "hard worker"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ကြိုးစားမှု၊ အားထုတ်မှု"
   },
   {
     "id": 88,
@@ -2302,7 +2501,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "investment"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 3",
+    "myanmarMeaning": "ပစ်သည်၊ တင်သွင်းသည်၊ ရင်းနှီးမြှုပ်နှံသည်",
+    "week": 6,
+    "day": 3,
+    "lesson": "スポーツ記事"
   },
   {
     "id": 89,
@@ -2328,7 +2531,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "target"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 3",
+    "myanmarMeaning": "ဆန့်ကျင်ဘက်၊ နှင့်ယှဉ်သော၊ ဆီသို့",
+    "week": 6,
+    "day": 3,
+    "lesson": "スポーツ記事"
   },
   {
     "id": 90,
@@ -2354,7 +2561,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "bouquet"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အစု၊ ချည်နှောင်သည်"
   },
   {
     "id": 91,
@@ -2380,7 +2588,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "ravine"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ချိုင့်ဝှမ်း"
   },
   {
     "id": 92,
@@ -2406,7 +2615,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "first place"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အဆင့်၊ တည်နေရာ"
   },
   {
     "id": 93,
@@ -2432,7 +2642,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "range"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဝန်းရံသည်၊ ဝိုင်းရံသည်"
   },
   {
     "id": 94,
@@ -2458,7 +2669,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "completion"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 6",
+    "myanmarMeaning": "ပြီးပြည့်စုံသော၊ ပြီးဆုံးသည်",
+    "week": 3,
+    "day": 6,
+    "lesson": "携帯電話"
   },
   {
     "id": 95,
@@ -2484,7 +2699,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "angle"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ထောင့်၊ ထောင့်၊ ချို"
   },
   {
     "id": 96,
@@ -2510,7 +2726,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "clear weather"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 4",
+    "myanmarMeaning": "ပျော်ရွှင်ဖွယ်၊ သက်တောင့်သက်သာရှိသော",
+    "week": 1,
+    "day": 4,
+    "lesson": "駅のホーム"
   },
   {
     "id": 97,
@@ -2536,7 +2756,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "ticket gate"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 6",
+    "myanmarMeaning": "ပြောင်းလဲသည်၊ ပြန်လည်ပြင်ဆင်သည်၊ တိုးတက်စေသည်",
+    "week": 6,
+    "day": 6,
+    "lesson": "政治"
   },
   {
     "id": 98,
@@ -2562,7 +2786,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "special skill"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 2",
+    "myanmarMeaning": "ကျွမ်းကျင်မှု၊ နည်းပညာ",
+    "week": 6,
+    "day": 2,
+    "lesson": "求人広告"
   },
   {
     "id": 99,
@@ -2588,7 +2816,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "pharmacy"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 4",
+    "myanmarMeaning": "ရုံး၊ ဌာန၊ ဘူတာရုံ",
+    "week": 2,
+    "day": 4,
+    "lesson": "街の地図"
   },
   {
     "id": 100,
@@ -2614,7 +2846,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "ruler"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "သင်၊ အုပ်ချုပ်သူ"
   },
   {
     "id": 101,
@@ -2640,7 +2873,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "uniform"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "တူညီသော၊ ပျမ်းမျှ"
   },
   {
     "id": 102,
@@ -2666,7 +2900,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "format"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 5",
+    "myanmarMeaning": "ပုံသဏ္ဌာန်၊ ပုံစံ",
+    "week": 2,
+    "day": 5,
+    "lesson": "病院"
   },
   {
     "id": 103,
@@ -2692,7 +2930,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "decision"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 3",
+    "myanmarMeaning": "ဆုံးဖြတ်သည်၊ ဆုံးဖြတ်ပြီးဖြစ်သည်",
+    "week": 6,
+    "day": 3,
+    "lesson": "スポーツ記事"
   },
   {
     "id": 104,
@@ -2718,7 +2960,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "entertainer"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အနုပညာ၊ ဖျော်ဖြေမှု"
   },
   {
     "id": 105,
@@ -2744,7 +2987,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "applicant"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 5",
+    "myanmarMeaning": "မျှော်လင့်ချက်၊ ရှားပါးသော",
+    "week": 4,
+    "day": 5,
+    "lesson": "注文"
   },
   {
     "id": 106,
@@ -2770,7 +3017,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "advertisement"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 2",
+    "myanmarMeaning": "ပြောသည်၊ ကြေညာသည်",
+    "week": 4,
+    "day": 2,
+    "lesson": "広告メール"
   },
   {
     "id": 107,
@@ -2796,7 +3047,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "personnel"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 4",
+    "myanmarMeaning": "ပစ္စည်း/ကုန်ကြမ်း၊ အရည်အချင်း",
+    "week": 3,
+    "day": 4,
+    "lesson": "レシピ"
   },
   {
     "id": 108,
@@ -2822,7 +3077,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "uphill slope"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ကုန်းစောင်း၊ တောင်ကုန်း"
   },
   {
     "id": 109,
@@ -2848,7 +3104,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "similarity"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဆင်တူသည်၊ ဆင်တူသော"
   },
   {
     "id": 110,
@@ -2874,7 +3131,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "pediatrics"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ကလေး"
   },
   {
     "id": 111,
@@ -2900,7 +3158,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "invitation"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အခြေအနေ၊ ပုံစံ"
   },
   {
     "id": 112,
@@ -2926,7 +3185,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "first day"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ပထမ၊ အစ"
   },
   {
     "id": 113,
@@ -2952,7 +3212,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "assistant"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ကူညီသည်၊ ကူညီသည်"
   },
   {
     "id": 114,
@@ -2978,7 +3239,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "fatigue"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အလုပ်သမား/လုပ်အား၊ အခက်အခဲ"
   },
   {
     "id": 115,
@@ -3004,7 +3266,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "refrigerator"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 1",
+    "myanmarMeaning": "အေးသော၊ အေးမြသော",
+    "week": 3,
+    "day": 1,
+    "lesson": "要冷蔵"
   },
   {
     "id": 116,
@@ -3030,7 +3296,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "exception"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 4",
+    "myanmarMeaning": "ဥပမာ",
+    "week": 4,
+    "day": 4,
+    "lesson": "申込書"
   },
   {
     "id": 117,
@@ -3056,7 +3326,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "Japanese-style room"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ညီညွတ်မှု၊ ဂျပန်စတိုင်"
   },
   {
     "id": 118,
@@ -3082,7 +3353,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "dictation"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အခြေအနေ/ပြည်နယ်၊ ဖော်ပြသည်"
   },
   {
     "id": 119,
@@ -3108,7 +3380,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "acknowledgment"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "လက်ခံသည်၊ အသိအမှတ်ပြုသည်"
   },
   {
     "id": 120,
@@ -3134,7 +3407,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "invitation card"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဖိတ်ခေါ်သည်၊ အကြောင်းရင်း"
   },
   {
     "id": 121,
@@ -3160,7 +3434,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to bear fruit"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 6",
+    "myanmarMeaning": "အမှန်တရား၊ အသီး၊ အမှန်တရား",
+    "week": 6,
+    "day": 6,
+    "lesson": "政治"
   },
   {
     "id": 122,
@@ -3186,7 +3464,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "acquisition"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 6",
+    "myanmarMeaning": "ယူသည်၊ ရယူသည်",
+    "week": 4,
+    "day": 6,
+    "lesson": "不在通知"
   },
   {
     "id": 123,
@@ -3212,7 +3494,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "politics"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ကုသသည်၊ ကုသသည်၊ အုပ်ချုပ်သည်"
   },
   {
     "id": 124,
@@ -3238,7 +3521,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "taking an examination"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 5",
+    "myanmarMeaning": "လက်ခံရရှိသည်၊ ယူသည်",
+    "week": 2,
+    "day": 5,
+    "lesson": "病院"
   },
   {
     "id": 125,
@@ -3264,7 +3551,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "one lap"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ပတ်ဝန်းကျင်၊ ပတ်လည်"
   },
   {
     "id": 126,
@@ -3290,7 +3578,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "wife and children"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဇနီး"
   },
   {
     "id": 127,
@@ -3316,7 +3605,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to go humbly"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 6",
+    "myanmarMeaning": "ပါဝင်သည်၊ နှိမ့်ချစွာသွားရောက်သည်",
+    "week": 4,
+    "day": 6,
+    "lesson": "不在通知"
   },
   {
     "id": 128,
@@ -3342,7 +3635,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "edamame"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အကိုင်း/ဌာနခွဲ၊ အကိုင်းသေး"
   },
   {
     "id": 129,
@@ -3368,7 +3662,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "additional printing"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ပုံနှိပ်သည်"
   },
   {
     "id": 130,
@@ -3394,7 +3689,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "valid"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အကျိုးသက်ရောက်မှု၊ အလုပ်"
   },
   {
     "id": 131,
@@ -3420,7 +3716,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "misfortune"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ပျော်ရွှင်မှု၊ ကံကောင်းခြင်း"
   },
   {
     "id": 132,
@@ -3446,7 +3743,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "fixation"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "မာသော၊ ခိုင်မာစေသည်"
   },
   {
     "id": 133,
@@ -3472,7 +3770,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "rainy season"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ရာသီ"
   },
   {
     "id": 134,
@@ -3498,7 +3797,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "opposite shore"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ကမ်းစပ်၊ ကမ်းရိုးတန်း"
   },
   {
     "id": 135,
@@ -3524,7 +3824,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "lava"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ကျောက်၊ ကျောက်တုံးကြီး"
   },
   {
     "id": 136,
@@ -3550,7 +3851,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "loud crying"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ငိုသည်၊ ငိုကြွေးသည်"
   },
   {
     "id": 137,
@@ -3576,7 +3878,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "consultation"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 2",
+    "myanmarMeaning": "ပူးပေါင်းဆောင်ရွက်မှု",
+    "week": 2,
+    "day": 2,
+    "lesson": "禁煙"
   },
   {
     "id": 138,
@@ -3602,7 +3908,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "residence"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ရှိသည်၊ နေထိုင်သည်"
   },
   {
     "id": 139,
@@ -3628,7 +3935,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "hardship"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဒုက္ခ၊ ခါးသော"
   },
   {
     "id": 140,
@@ -3654,7 +3962,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "specific"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ကိရိယာ၊ ကိရိယာ"
   },
   {
     "id": 141,
@@ -3680,7 +3989,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to accomplish"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 3",
+    "myanmarMeaning": "ရလဒ်၊ ပြီးမြောက်စေသည်",
+    "week": 6,
+    "day": 3,
+    "lesson": "スポーツ記事"
   },
   {
     "id": 142,
@@ -3706,7 +4019,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "river mouth"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "မြစ်"
   },
   {
     "id": 143,
@@ -3732,7 +4046,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "police officer"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အစိုးရဝန်ထမ်း"
   },
   {
     "id": 144,
@@ -3758,7 +4073,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to entrust"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အပ်နှံသည်၊ ကော်မတီ"
   },
   {
     "id": 145,
@@ -3784,7 +4100,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "trade"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 4",
+    "myanmarMeaning": "လွယ်ကူသော၊ လဲလှယ်သည်",
+    "week": 6,
+    "day": 4,
+    "lesson": "経済"
   },
   {
     "id": 146,
@@ -3810,7 +4130,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "education"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ကြီးထွားသည်၊ မွေးမြူ/မြှင့်တင်သည်"
   },
   {
     "id": 147,
@@ -3836,7 +4157,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "competitive swimming"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ရေကူးသည်"
   },
   {
     "id": 148,
@@ -3862,7 +4184,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "directly"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 5 / Day 3",
+    "myanmarMeaning": "တိုက်ရိုက်၊ ပြုပြင်သည်",
+    "week": 5,
+    "day": 3,
+    "lesson": "日本語クラス"
   },
   {
     "id": 149,
@@ -3888,7 +4214,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to establish"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 5",
+    "myanmarMeaning": "ဆုံးဖြတ်သည်၊ တည်ထောင်သည်",
+    "week": 1,
+    "day": 5,
+    "lesson": "特急電車"
   },
   {
     "id": 150,
@@ -3914,7 +4244,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "thoroughness"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အောက်ခြေ၊ အခြေ"
   },
   {
     "id": 151,
@@ -3935,7 +4266,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "specific"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 6",
+    "myanmarMeaning": "ပစ်မှတ်၊ ရည်ရွယ်ချက်၊ ဆိုင်သော",
+    "week": 6,
+    "day": 6,
+    "lesson": "政治"
   },
   {
     "id": 152,
@@ -3961,7 +4296,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "safety"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 4",
+    "myanmarMeaning": "သဘာဝ/အရည်အသွေး၊ အရည်အသွေး၊ လိင်",
+    "week": 4,
+    "day": 4,
+    "lesson": "申込書"
   },
   {
     "id": 153,
@@ -3987,7 +4326,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "past and present"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ရှေးအခါ၊ ဟိုးအရင်က"
   },
   {
     "id": 154,
@@ -4013,7 +4353,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "compulsion"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "စနစ်၊ ထိန်းချုပ်သည်"
   },
   {
     "id": 155,
@@ -4039,7 +4380,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "recent graduate"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဘွဲ့ရသည်၊ ပြီးဆုံးသည်"
   },
   {
     "id": 156,
@@ -4065,7 +4407,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "unofficial"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 3",
+    "myanmarMeaning": "မဟုတ်သော၊ မှားသော၊ အနုတ်/ဆိုးမြင်",
+    "week": 1,
+    "day": 3,
+    "lesson": "サイン"
   },
   {
     "id": 157,
@@ -4091,7 +4437,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "advantageous"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 2",
+    "myanmarMeaning": "အကျိုး၊ အကျိုးအမြတ်",
+    "week": 4,
+    "day": 2,
+    "lesson": "広告メール"
   },
   {
     "id": 158,
@@ -4117,7 +4467,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "tsunami"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 1",
+    "myanmarMeaning": "လှိုင်း",
+    "week": 6,
+    "day": 1,
+    "lesson": "天気予報"
   },
   {
     "id": 159,
@@ -4143,7 +4497,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "signboard"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဘုတ်ပြား၊ ပျဉ်ပြား"
   },
   {
     "id": 160,
@@ -4169,7 +4524,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "latest version"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ထုတ်ဝေမှု၊ ပုံနှိပ်ခြင်း"
   },
   {
     "id": 161,
@@ -4195,7 +4551,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "just in case"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 5 / Day 1",
+    "myanmarMeaning": "အတွေး၊ စိုးရိမ်မှု/ဆက်စပ်မှု",
+    "week": 5,
+    "day": 1,
+    "lesson": "メールを送る"
   },
   {
     "id": 162,
@@ -4221,7 +4581,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "samurai"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "စစ်ရေး၊ ကိုယ်ခံပညာ"
   },
   {
     "id": 163,
@@ -4247,7 +4608,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "presentation"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 4",
+    "myanmarMeaning": "မျက်နှာပြင်၊ ဖော်ပြသည်၊ ဇယား",
+    "week": 3,
+    "day": 4,
+    "lesson": "レシピ"
   },
   {
     "id": 164,
@@ -4273,7 +4638,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "life"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အသက်/ဘဝ၊ အစဉ်/အမိန့်"
   },
   {
     "id": 165,
@@ -4299,7 +4665,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "liberation"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "လွှတ်ပေးသည်၊ လွှတ်သည်"
   },
   {
     "id": 166,
@@ -4325,7 +4692,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "grammar"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 2",
+    "myanmarMeaning": "ဥပဒေ၊ နည်းလမ်း",
+    "week": 3,
+    "day": 2,
+    "lesson": "消費期限"
   },
   {
     "id": 167,
@@ -4351,7 +4722,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "carelessness"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 1",
+    "myanmarMeaning": "ဆီ",
+    "week": 4,
+    "day": 1,
+    "lesson": "日用品"
   },
   {
     "id": 168,
@@ -4377,7 +4752,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "hero"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "သတ္တိ၊ သတ္တိ"
   },
   {
     "id": 169,
@@ -4403,7 +4779,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "main point"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 1",
+    "myanmarMeaning": "လိုအပ်သည်၊ အရေးကြီးသော",
+    "week": 3,
+    "day": 1,
+    "lesson": "要冷蔵"
   },
   {
     "id": 170,
@@ -4429,7 +4809,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "burden"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 3",
+    "myanmarMeaning": "ရှုံး/ပျောက်ဆုံးသည်၊ တာဝန်ယူသည်၊ အနုတ်/ဆိုးမြင်",
+    "week": 6,
+    "day": 3,
+    "lesson": "スポーツ記事"
   },
   {
     "id": 171,
@@ -4455,7 +4839,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "trouble"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "လမ်းပျောက်သည်၊ တွန့်ဆုတ်သည်"
   },
   {
     "id": 172,
@@ -4481,7 +4866,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "about ten people"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 1",
+    "myanmarMeaning": "ကတိ၊ ခန့်မှန်းခြေ",
+    "week": 2,
+    "day": 1,
+    "lesson": "レストラン"
   },
   {
     "id": 173,
@@ -4507,7 +4896,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "front"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 4",
+    "myanmarMeaning": "မျက်နှာ၊ မျက်နှာပြင်၊ ရှုထောင့်",
+    "week": 1,
+    "day": 4,
+    "lesson": "駅のホーム"
   },
   {
     "id": 174,
@@ -4533,7 +4926,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "difficult"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 5",
+    "myanmarMeaning": "ပြောင်းလဲသည်၊ ထူးဆန်းသော",
+    "week": 6,
+    "day": 5,
+    "lesson": "地球温暖化"
   },
   {
     "id": 175,
@@ -4559,7 +4956,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to jump out"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 2",
+    "myanmarMeaning": "ပျံသည်၊ ခုန်သည်",
+    "week": 1,
+    "day": 2,
+    "lesson": "横断歩道"
   },
   {
     "id": 176,
@@ -4585,7 +4986,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "beautiful person"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 3",
+    "myanmarMeaning": "အလှ၊ လှသော",
+    "week": 2,
+    "day": 3,
+    "lesson": "観光地図"
   },
   {
     "id": 177,
@@ -4611,7 +5016,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "unique"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "တစ်ယောက်တည်း၊ လွတ်လပ်သော"
   },
   {
     "id": 178,
@@ -4637,7 +5043,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "law"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "စည်းမျဉ်း၊ မူ"
   },
   {
     "id": 179,
@@ -4663,7 +5070,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "mutual"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 4",
+    "myanmarMeaning": "အပြန်အလှန်၊ မိတ်ဖက်",
+    "week": 6,
+    "day": 4,
+    "lesson": "経済"
   },
   {
     "id": 180,
@@ -4689,7 +5100,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "weed"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "မြက်၊ အပင်/စိုက်သည်"
   },
   {
     "id": 181,
@@ -4715,7 +5127,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "ancestor"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဘိုးဘေး"
   },
   {
     "id": 182,
@@ -4741,7 +5154,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "communication"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 2",
+    "myanmarMeaning": "ယုံကြည်မှု၊ ယုံကြည်မှု၊ သတင်းစကား",
+    "week": 1,
+    "day": 2,
+    "lesson": "横断歩道"
   },
   {
     "id": 183,
@@ -4767,7 +5184,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "policy"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 6",
+    "myanmarMeaning": "နိုင်ငံရေး၊ အစိုးရ",
+    "week": 6,
+    "day": 6,
+    "lesson": "政治"
   },
   {
     "id": 184,
@@ -4793,7 +5214,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "Mars"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ကြယ်"
   },
   {
     "id": 185,
@@ -4819,7 +5241,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "weak point"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 4",
+    "myanmarMeaning": "အချက်/အမှတ်၊ အမှတ်အသား",
+    "week": 2,
+    "day": 4,
+    "lesson": "街の地図"
   },
   {
     "id": 186,
@@ -4845,7 +5271,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to catch up"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "လိုက်သည်၊ လိုက်သည်"
   },
   {
     "id": 187,
@@ -4871,7 +5298,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "straightforward"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 5 / Day 2",
+    "myanmarMeaning": "တစ်ခုတည်း၊ ရိုးရှင်းသော",
+    "week": 5,
+    "day": 2,
+    "lesson": "アンケート"
   },
   {
     "id": 188,
@@ -4897,7 +5328,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "charcoal fire"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "မီးသွေး၊ ကျောက်မီးသွေး"
   },
   {
     "id": 189,
@@ -4923,7 +5355,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "leave early"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဆုတ်ခွာသည်၊ ထွက်ခွာသည်"
   },
   {
     "id": 190,
@@ -4949,7 +5382,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "honor"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "တိုးတက်ကြွယ်ဝမှု၊ ဂုဏ်ကျက်သရေ"
   },
   {
     "id": 191,
@@ -4975,7 +5409,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "surgery"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 5",
+    "myanmarMeaning": "ဌာန၊ ဘာသာရပ်",
+    "week": 2,
+    "day": 5,
+    "lesson": "病院"
   },
   {
     "id": 192,
@@ -5001,7 +5439,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "practical use"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 5",
+    "myanmarMeaning": "အသက်ဝင်သော၊ အသက်/ဘဝ",
+    "week": 6,
+    "day": 5,
+    "lesson": "地球温暖化"
   },
   {
     "id": 193,
@@ -5027,7 +5469,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "stomach medicine"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အစာအိမ်"
   },
   {
     "id": 194,
@@ -5053,7 +5496,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "classmate"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 3",
+    "myanmarMeaning": "အဆင့်၊ အဆင့်",
+    "week": 4,
+    "day": 3,
+    "lesson": "通信販売"
   },
   {
     "id": 195,
@@ -5079,7 +5526,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "shogun"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "စစ်တပ်၊ စစ်ရေး"
   },
   {
     "id": 196,
@@ -5105,7 +5553,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "attendant"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 1",
+    "myanmarMeaning": "ဆက်ဆံရေး၊ တာဝန်ခံ",
+    "week": 1,
+    "day": 1,
+    "lesson": "駐車場"
   },
   {
     "id": 197,
@@ -5131,7 +5583,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "new model"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 3",
+    "myanmarMeaning": "အမျိုးအစား၊ မော်ဒယ်/ပုံစံ",
+    "week": 4,
+    "day": 3,
+    "lesson": "通信販売"
   },
   {
     "id": 198,
@@ -5157,7 +5613,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "passenger"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 2",
+    "myanmarMeaning": "ဧည့်သည်၊ ဖောက်သည်",
+    "week": 2,
+    "day": 2,
+    "lesson": "禁煙"
   },
   {
     "id": 199,
@@ -5183,7 +5643,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to resist"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ပြောင်းပြန်၊ ဆန့်ကျင်ဘက်"
   },
   {
     "id": 200,
@@ -5209,7 +5670,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "deadline"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 2",
+    "myanmarMeaning": "ကန့်သတ်ချက်၊ ကန့်သတ်သည်",
+    "week": 3,
+    "day": 2,
+    "lesson": "消費期限"
   },
   {
     "id": 201,
@@ -5235,7 +5700,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "gentle"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ထူသော၊ အမျိုးအစား"
   },
   {
     "id": 202,
@@ -5261,7 +5727,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "designation"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 5",
+    "myanmarMeaning": "လက်ချောင်း၊ အချက်/အမှတ်၊ ညွှန်ပြသည်",
+    "week": 1,
+    "day": 5,
+    "lesson": "特急電車"
   },
   {
     "id": 203,
@@ -5287,7 +5757,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "last year"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ယခင်၊ မနေ့က"
   },
   {
     "id": 204,
@@ -5313,7 +5784,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "celebration"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဂုဏ်ပြုသည်၊ ဂုဏ်ပြုသည်"
   },
   {
     "id": 205,
@@ -5339,7 +5811,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "deity"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 3",
+    "myanmarMeaning": "ဘုရား၊ စိတ်ဓာတ်",
+    "week": 2,
+    "day": 3,
+    "lesson": "観光地図"
   },
   {
     "id": 206,
@@ -5365,7 +5841,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "evaluation"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 5 / Day 2",
+    "myanmarMeaning": "စုံစမ်းစစ်ဆေးသည်၊ စစ်ဆေးသည်",
+    "week": 5,
+    "day": 2,
+    "lesson": "アンケート"
   },
   {
     "id": 207,
@@ -5391,7 +5871,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "reflection"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဝန်ကြီးဌာန၊ ချန်လှပ်သည်၊ သုံးသပ်သည်"
   },
   {
     "id": 208,
@@ -5417,7 +5898,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "Japanese pub"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အရက်၊ ဂျပန်အရက်"
   },
   {
     "id": 209,
@@ -5443,7 +5925,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to smile"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 5 / Day 1",
+    "myanmarMeaning": "ရယ်သည်၊ ပြုံးသည်",
+    "week": 5,
+    "day": 1,
+    "lesson": "メールを送る"
   },
   {
     "id": 210,
@@ -5469,7 +5955,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "fire engine"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 6",
+    "myanmarMeaning": "ပျောက်ကွယ်သည်၊ ငြိမ်းသတ်သည်",
+    "week": 2,
+    "day": 6,
+    "lesson": "困ったときは"
   },
   {
     "id": 211,
@@ -5495,7 +5985,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "hairdresser"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဆရာ၊ ကျွမ်းကျင်သူ"
   },
   {
     "id": 212,
@@ -5521,7 +6012,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "finances"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ချမ်းသာမှု၊ ပိုင်ဆိုင်မှု"
   },
   {
     "id": 213,
@@ -5547,7 +6039,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "sterilization"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "သတ်သည်၊ လျှော့ချသည်"
   },
   {
     "id": 214,
@@ -5573,7 +6066,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "discrimination"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 4",
+    "myanmarMeaning": "ကွာခြားချက်၊ ကွာဟချက်",
+    "week": 2,
+    "day": 4,
+    "lesson": "街の地図"
   },
   {
     "id": 215,
@@ -5599,7 +6096,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "overtime"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 3",
+    "myanmarMeaning": "ကျန်နေသည်၊ ကျန်ရစ်စေသည်",
+    "week": 4,
+    "day": 3,
+    "lesson": "通信販売"
   },
   {
     "id": 216,
@@ -5625,7 +6126,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "voyage"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ရေကြောင်း/လေကြောင်းသွားလာမှု၊ လေကြောင်း"
   },
   {
     "id": 217,
@@ -5651,7 +6153,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "roof"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အမြစ်၊ အခြေခံ"
   },
   {
     "id": 218,
@@ -5677,7 +6180,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "one item"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 1",
+    "myanmarMeaning": "တစ်ဦးချင်း၊ ရေတွက်စကားလုံး",
+    "week": 4,
+    "day": 1,
+    "lesson": "日用品"
   },
   {
     "id": 219,
@@ -5703,7 +6210,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "weather"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ရာသီဥတု၊ အမှတ်အသား၊ ကိုယ်စားလှယ်လောင်း"
   },
   {
     "id": 220,
@@ -5729,7 +6237,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "refrigerator"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 1",
+    "myanmarMeaning": "သိုလှောင်မှု၊ ဂိုဒေါင်",
+    "week": 3,
+    "day": 1,
+    "lesson": "要冷蔵"
   },
   {
     "id": 221,
@@ -5755,7 +6267,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "diary"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 4",
+    "myanmarMeaning": "မှတ်တမ်း၊ ရေးမှတ်သည်",
+    "week": 4,
+    "day": 4,
+    "lesson": "申込書"
   },
   {
     "id": 222,
@@ -5781,7 +6297,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "kun-reading"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ညွှန်ကြားချက်၊ ဂျပန်ဖတ်ပုံ"
   },
   {
     "id": 223,
@@ -5807,7 +6324,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "pollution"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ထိခိုက်မှု၊ ပျက်စီးမှု"
   },
   {
     "id": 224,
@@ -5833,7 +6351,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "passing"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 3",
+    "myanmarMeaning": "အဆင့်အတန်း၊ စံနှုန်း၊ အက္ခရာ/သဘောသဘာဝ",
+    "week": 4,
+    "day": 3,
+    "lesson": "通信販売"
   },
   {
     "id": 225,
@@ -5859,7 +6381,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "shipment"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 5",
+    "myanmarMeaning": "အထုပ်အပိုး၊ တင်သည်",
+    "week": 4,
+    "day": 5,
+    "lesson": "注文"
   },
   {
     "id": 226,
@@ -5885,7 +6411,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "temperate zone"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 6",
+    "myanmarMeaning": "ခါးပတ်၊ ဇုန်၊ သယ်ဆောင်သည်",
+    "week": 4,
+    "day": 6,
+    "lesson": "不在通知"
   },
   {
     "id": 227,
@@ -5911,7 +6441,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "uninhabited island"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ကျွန်း"
   },
   {
     "id": 228,
@@ -5937,7 +6468,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "courtyard"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဥယျာဉ်၊ ခြံဝင်း"
   },
   {
     "id": 229,
@@ -5963,7 +6495,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "foot race"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "follower၊ ခြေလျင်"
   },
   {
     "id": 230,
@@ -5989,7 +6522,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "absence"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 5",
+    "myanmarMeaning": "ထိုင်ခုံ၊ နေရာ",
+    "week": 1,
+    "day": 5,
+    "lesson": "特急電車"
   },
   {
     "id": 231,
@@ -6015,7 +6552,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "rest"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အသက်ရှူ၊ သား"
   },
   {
     "id": 232,
@@ -6041,7 +6579,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "wooden"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 2",
+    "myanmarMeaning": "ပြုလုပ်သည်၊ တည်ဆောက်သည်",
+    "week": 3,
+    "day": 2,
+    "lesson": "消費期限"
   },
   {
     "id": 233,
@@ -6067,7 +6609,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "granddaughter"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "မြေး"
   },
   {
     "id": 234,
@@ -6093,7 +6636,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "expressway"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 4",
+    "myanmarMeaning": "မြန်သော၊ မြန်နှုန်း",
+    "week": 1,
+    "day": 4,
+    "lesson": "駅のホーム"
   },
   {
     "id": 235,
@@ -6119,7 +6666,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "function"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "စွမ်းရည်၊ လုပ်ဆောင်ချက်"
   },
   {
     "id": 236,
@@ -6145,7 +6693,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "delivery"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 5",
+    "myanmarMeaning": "ဖြန့်ဝေသည်၊ စီစဉ်သည်",
+    "week": 4,
+    "day": 5,
+    "lesson": "注文"
   },
   {
     "id": 237,
@@ -6171,7 +6723,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "doubling"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 2",
+    "myanmarMeaning": "နှစ်ဆ၊ အများအပြား",
+    "week": 4,
+    "day": 2,
+    "lesson": "広告メール"
   },
   {
     "id": 238,
@@ -6197,7 +6753,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "breakthrough"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဆုတ်ဖြဲသည်၊ ချိုးသည်"
   },
   {
     "id": 239,
@@ -6223,7 +6780,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "horse-drawn carriage"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "မြင်း"
   },
   {
     "id": 240,
@@ -6249,7 +6807,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "sea bathing"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ရေချိုးသည်၊ ရေချိုးသည်"
   },
   {
     "id": 241,
@@ -6275,7 +6834,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "container"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 2",
+    "myanmarMeaning": "ပါဝင်သည်၊ ပုံပန်းသဏ္ဌာန်",
+    "week": 6,
+    "day": 2,
+    "lesson": "求人広告"
   },
   {
     "id": 242,
@@ -6301,7 +6864,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "first-class"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 3",
+    "myanmarMeaning": "စီးဆင်းသည်၊ စတိုင်",
+    "week": 6,
+    "day": 3,
+    "lesson": "スポーツ記事"
   },
   {
     "id": 243,
@@ -6327,7 +6894,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "hold"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 5",
+    "myanmarMeaning": "နေသည်၊ ထိန်းသိမ်းသည်",
+    "week": 3,
+    "day": 5,
+    "lesson": "コピー機・留守番電話"
   },
   {
     "id": 244,
@@ -6353,7 +6924,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to take along"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 4",
+    "myanmarMeaning": "ဆက်သွယ်သည်၊ အတူလိုက်ပါသည်",
+    "week": 4,
+    "day": 4,
+    "lesson": "申込書"
   },
   {
     "id": 245,
@@ -6379,7 +6954,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "athletics"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ကုန်းမြေ"
   },
   {
     "id": 246,
@@ -6405,7 +6981,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "rate"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "နှုန်း၊ အချိုး"
   },
   {
     "id": 247,
@@ -6431,7 +7008,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "strategy"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အတိုကောက်၊ ချန်လှပ်သည်"
   },
   {
     "id": 248,
@@ -6457,7 +7035,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "outlook"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 5",
+    "myanmarMeaning": "မျှော်လင့်ချက်၊ ဆန္ဒ၊ ကြည့်ရှုသည်",
+    "week": 4,
+    "day": 5,
+    "lesson": "注文"
   },
   {
     "id": 249,
@@ -6483,7 +7065,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "duty"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 2",
+    "myanmarMeaning": "တာဝန်၊ အလုပ်",
+    "week": 6,
+    "day": 2,
+    "lesson": "求人広告"
   },
   {
     "id": 250,
@@ -6504,7 +7090,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "defeat"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ရှုံးနိမ့်မှု၊ မအောင်မြင်မှု"
   },
   {
     "id": 251,
@@ -6525,7 +7112,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "room"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 5",
+    "myanmarMeaning": "အပိုင်း၊ ဌာန၊ အပိုင်း",
+    "week": 3,
+    "day": 5,
+    "lesson": "コピー機・留守番電話"
   },
   {
     "id": 252,
@@ -6546,7 +7137,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "side effect"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "လက်ထောက်၊ ဒုတိယ/အရန်၊ ဒု-"
   },
   {
     "id": 253,
@@ -6567,7 +7159,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "married couple"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 5",
+    "myanmarMeaning": "အမျိုးသမီး၊ ဇနီး",
+    "week": 2,
+    "day": 5,
+    "lesson": "病院"
   },
   {
     "id": 254,
@@ -6588,7 +7184,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "opposite side"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 5",
+    "myanmarMeaning": "ဘက်/နံဘေး၊ အနီးအနား",
+    "week": 1,
+    "day": 5,
+    "lesson": "特急電車"
   },
   {
     "id": 255,
@@ -6609,7 +7209,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "combination"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အုပ်စု၊ အဖွဲ့၊ စုစည်းသည်"
   },
   {
     "id": 256,
@@ -6630,7 +7231,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to blame"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "တာဝန်ယူမှု၊ အပြစ်တင်သည်"
   },
   {
     "id": 257,
@@ -6651,7 +7253,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "connection"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 6",
+    "myanmarMeaning": "ဆက်သွယ်မှု၊ ဆက်သွယ်သည်",
+    "week": 3,
+    "day": 6,
+    "lesson": "携帯電話"
   },
   {
     "id": 258,
@@ -6672,7 +7278,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "crew member"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "သင်္ဘော၊ လှေ"
   },
   {
     "id": 259,
@@ -6693,7 +7300,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "business"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 2",
+    "myanmarMeaning": "ကုန်သွယ်ရေး၊ စီးပွားရေး",
+    "week": 4,
+    "day": 2,
+    "lesson": "広告メール"
   },
   {
     "id": 260,
@@ -6714,7 +7325,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "equipment"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "တည်ထောင်သည်၊ တပ်ဆင်သည်"
   },
   {
     "id": 261,
@@ -6735,7 +7347,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "heavy snow"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 1",
+    "myanmarMeaning": "နှင်း",
+    "week": 6,
+    "day": 1,
+    "lesson": "天気予報"
   },
   {
     "id": 262,
@@ -6756,7 +7372,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "cleaning"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "သန့်ရှင်းသော၊ သန့်စင်သော"
   },
   {
     "id": 263,
@@ -6777,7 +7394,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "serious"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "နက်သော၊ နက်နဲသော"
   },
   {
     "id": 264,
@@ -6798,7 +7416,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "understanding"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ရယူသည်၊ ရရှိသည်၊ အကျိုး"
   },
   {
     "id": 265,
@@ -6819,7 +7438,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "depending on"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အစဉ်/အမိန့်၊ နံပါတ်/အရေအတွက်"
   },
   {
     "id": 266,
@@ -6840,7 +7460,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "stopping a vehicle"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 6",
+    "myanmarMeaning": "ရပ်သည်၊ ရပ်တန့်သည်",
+    "week": 1,
+    "day": 6,
+    "lesson": "バス"
   },
   {
     "id": 267,
@@ -6861,7 +7485,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "judgment"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 1",
+    "myanmarMeaning": "ဖြတ်တောက်သည်၊ ငြင်းဆိုသည်၊ ဆုံးဖြတ်သည်",
+    "week": 1,
+    "day": 1,
+    "lesson": "駐車場"
   },
   {
     "id": 268,
@@ -6882,7 +7510,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "currency"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ကုန်ပစ္စည်း၊ ငွေကြေး"
   },
   {
     "id": 269,
@@ -6903,7 +7532,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "blood"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အရည်၊ အရည်"
   },
   {
     "id": 270,
@@ -6924,7 +7554,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to move"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 5 / Day 2",
+    "myanmarMeaning": "ရွှေ့သည်၊ လွှဲပြောင်းသည်",
+    "week": 5,
+    "day": 2,
+    "lesson": "アンケート"
   },
   {
     "id": 271,
@@ -6945,7 +7579,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "economy"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 4",
+    "myanmarMeaning": "ဖြတ်သန်းသွားသည်၊ စီမံသည်",
+    "week": 6,
+    "day": 4,
+    "lesson": "経済"
   },
   {
     "id": 272,
@@ -6966,7 +7604,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "scale"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "စည်းမျဉ်း၊ စံနှုန်း"
   },
   {
     "id": 273,
@@ -6987,7 +7626,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "donation"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ချဉ်းကပ်သည်၊ ဝင်ရောက်သည်၊ ပါဝင်ကူညီသည်"
   },
   {
     "id": 274,
@@ -7008,7 +7648,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to forgive"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ခွင့်ပြုသည်၊ ခွင့်လွှတ်သည်"
   },
   {
     "id": 275,
@@ -7029,7 +7670,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "Earth"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 3",
+    "myanmarMeaning": "ဘောလုံး၊ လုံး",
+    "week": 6,
+    "day": 3,
+    "lesson": "スポーツ記事"
   },
   {
     "id": 276,
@@ -7050,7 +7695,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "ambulance"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 6",
+    "myanmarMeaning": "ကယ်တင်/စုဆောင်းသည်၊ ကယ်ဆယ်သည်",
+    "week": 2,
+    "day": 6,
+    "lesson": "困ったときは"
   },
   {
     "id": 277,
@@ -7071,7 +7720,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "insurance"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 3",
+    "myanmarMeaning": "အန္တရာယ်ရှိသော၊ မတ်စောက်သော",
+    "week": 1,
+    "day": 3,
+    "lesson": "サイン"
   },
   {
     "id": 278,
@@ -7092,7 +7745,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to appear"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 6",
+    "myanmarMeaning": "လက်ရှိ၊ ပေါ်လာသည်",
+    "week": 1,
+    "day": 6,
+    "lesson": "バス"
   },
   {
     "id": 279,
@@ -7113,7 +7770,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to mix"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 4",
+    "myanmarMeaning": "ရောသည်၊ လူများလာသည်",
+    "week": 3,
+    "day": 4,
+    "lesson": "レシピ"
   },
   {
     "id": 280,
@@ -7134,7 +7795,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "school festival"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ပွဲတော်၊ ကိုးကွယ်မှု"
   },
   {
     "id": 281,
@@ -7155,7 +7817,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "thin"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ပါးသော၊ အသေးစိတ်သော၊ သေးငယ်သော"
   },
   {
     "id": 282,
@@ -7176,7 +7839,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "surgery"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 3",
+    "myanmarMeaning": "နည်းပညာ၊ အနုပညာ၊ နည်းလမ်း",
+    "week": 2,
+    "day": 3,
+    "lesson": "観光地図"
   },
   {
     "id": 283,
@@ -7197,7 +7864,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "homework"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "တည်းခိုခြင်း၊ တည်းခိုခန်း"
   },
   {
     "id": 284,
@@ -7218,7 +7886,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "Chapter One"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အခန်း၊ အပိုင်း"
   },
   {
     "id": 285,
@@ -7239,7 +7908,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "daily life"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 3",
+    "myanmarMeaning": "ပုံမှန်၊ ပုံမှန်၊ အမြဲတမ်းသော",
+    "week": 1,
+    "day": 3,
+    "lesson": "サイン"
   },
   {
     "id": 286,
@@ -7260,7 +7933,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "emotion"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ခံစားချက်၊ သတင်းအချက်အလက်"
   },
   {
     "id": 287,
@@ -7281,7 +7955,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to plant"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အပင်/စိုက်သည်၊ ကြီးထွားသည်"
   },
   {
     "id": 288,
@@ -7302,7 +7977,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "going smoothly"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အစဉ်/အမိန့်၊ အစဉ်"
   },
   {
     "id": 289,
@@ -7323,7 +7999,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "target"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဆင်၊ ပုံရိပ်၊ ဖြစ်စဉ်"
   },
   {
     "id": 290,
@@ -7344,7 +8021,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "grilled meat"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 4",
+    "myanmarMeaning": "လောင်သည်၊ မုန့်ဖုတ်သည်၊ ကင်သည်",
+    "week": 3,
+    "day": 4,
+    "lesson": "レシピ"
   },
   {
     "id": 291,
@@ -7365,7 +8046,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "victory"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 3",
+    "myanmarMeaning": "အနိုင်ရသည်၊ အောင်ပွဲ",
+    "week": 6,
+    "day": 3,
+    "lesson": "スポーツ記事"
   },
   {
     "id": 292,
@@ -7386,7 +8071,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "toothbrush"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "သွား"
   },
   {
     "id": 293,
@@ -7407,7 +8093,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "last"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 5 / Day 3",
+    "myanmarMeaning": "အများဆုံး၊ အကြီးဆုံး",
+    "week": 5,
+    "day": 3,
+    "lesson": "日本語クラス"
   },
   {
     "id": 294,
@@ -7428,7 +8118,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "dissolution"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ပြန့်ကျဲစေသည်၊ ပြန့်ကျဲသည်"
   },
   {
     "id": 295,
@@ -7449,7 +8140,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "airport"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 3",
+    "myanmarMeaning": "ဆိပ်ကမ်း၊ ဆိပ်ကမ်း",
+    "week": 2,
+    "day": 3,
+    "lesson": "観光地図"
   },
   {
     "id": 296,
@@ -7470,7 +8165,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "inspection"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "စစ်ဆေးသည်၊ စစ်ဆေးသည်"
   },
   {
     "id": 297,
@@ -7491,7 +8187,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "lakeside"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ရေကန်"
   },
   {
     "id": 298,
@@ -7512,7 +8209,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "deadline"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 2",
+    "myanmarMeaning": "ကာလ၊ ကာလ/အသုံးအနှုန်း၊ မျှော်လင့်ချက်",
+    "week": 3,
+    "day": 2,
+    "lesson": "消費期限"
   },
   {
     "id": 299,
@@ -7533,7 +8234,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "joy"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဝမ်းမြောက်သည်၊ ဝမ်းသာသည်"
   },
   {
     "id": 300,
@@ -7554,7 +8256,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "result"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ချည်သည်၊ ဆက်သွယ်သည်၊ နိဂုံးချုပ်သည်"
   },
   {
     "id": 301,
@@ -7575,7 +8278,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "background"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ရှုခင်း၊ မြင်ကွင်း"
   },
   {
     "id": 302,
@@ -7596,7 +8300,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "provision"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ထောက်ပံ့သည်၊ ပံ့ပိုးပေးသည်၊ လစာ"
   },
   {
     "id": 303,
@@ -7617,7 +8322,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "sea of clouds"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 1",
+    "myanmarMeaning": "တိမ်",
+    "week": 6,
+    "day": 1,
+    "lesson": "天気予報"
   },
   {
     "id": 304,
@@ -7638,7 +8347,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to operate"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 1",
+    "myanmarMeaning": "လည်ပတ်/လုပ်ကိုင်သည်၊ စီမံသည်၊ စီးပွားရေး",
+    "week": 2,
+    "day": 1,
+    "lesson": "レストラン"
   },
   {
     "id": 305,
@@ -7659,7 +8372,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "hot spring"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 2",
+    "myanmarMeaning": "နွေးသော၊ အပူချိန်",
+    "week": 3,
+    "day": 2,
+    "lesson": "消費期限"
   },
   {
     "id": 306,
@@ -7680,7 +8397,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to pass"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 4",
+    "myanmarMeaning": "ဖြတ်သန်းသည်၊ ကျော်လွန်သည်၊ အချိန်ကုန်ဆုံးသည်",
+    "week": 1,
+    "day": 4,
+    "lesson": "駅のホーム"
   },
   {
     "id": 307,
@@ -7701,7 +8422,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "picture book"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ပုံ၊ ပန်းချီ"
   },
   {
     "id": 308,
@@ -7722,7 +8444,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "second floor"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 3",
+    "myanmarMeaning": "အထပ်၊ အဆင့်၊ လှေကား",
+    "week": 1,
+    "day": 3,
+    "lesson": "サイン"
   },
   {
     "id": 309,
@@ -7743,7 +8469,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "arrival"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 6",
+    "myanmarMeaning": "ရောက်ရှိသည်၊ အများကိန်းနောက်ဆက်",
+    "week": 4,
+    "day": 6,
+    "lesson": "不在通知"
   },
   {
     "id": 310,
@@ -7764,7 +8494,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "sense"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "မှတ်မိသည်၊ နိုးထသည်"
   },
   {
     "id": 311,
@@ -7785,7 +8516,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to save"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ကယ်တင်/စုဆောင်းသည်၊ သိုလှောင်သည်"
   },
   {
     "id": 312,
@@ -7806,7 +8538,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "prediction"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "တိုင်းတာသည်၊ ခန့်မှန်းသည်"
   },
   {
     "id": 313,
@@ -7827,7 +8560,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "children’s story"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ကလေး၊ ကလေးသူငယ်"
   },
   {
     "id": 314,
@@ -7848,7 +8582,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "equivalent"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "တူညီသော၊ အတန်း၊ စသည်ဖြင့်"
   },
   {
     "id": 315,
@@ -7869,7 +8604,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "steam"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 3",
+    "myanmarMeaning": "ရေနွေး",
+    "week": 3,
+    "day": 3,
+    "lesson": "自動販売機"
   },
   {
     "id": 316,
@@ -7890,7 +8629,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "registration"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 6",
+    "myanmarMeaning": "တက်သည်၊ မှတ်ပုံတင်သည်",
+    "week": 3,
+    "day": 6,
+    "lesson": "携帯電話"
   },
   {
     "id": 317,
@@ -7911,7 +8654,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "schedule"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အတိုင်းအတာ၊ အတိုင်းအတာ"
   },
   {
     "id": 318,
@@ -7932,7 +8676,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "despair"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဖြတ်တောက်သည်၊ လုံးဝသော"
   },
   {
     "id": 319,
@@ -7953,7 +8698,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "naturally"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "သဘာဝ၊ ထိုသို့"
   },
   {
     "id": 320,
@@ -7974,7 +8720,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "wealth"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ချမ်းသာမှု၊ ကြွယ်ဝခြင်း"
   },
   {
     "id": 321,
@@ -7995,7 +8742,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "recovery"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 5 / Day 3",
+    "myanmarMeaning": "ပြန်လာ/ပြန်ပေးသည်၊ ပြန်လည်ပြုပြင်သည်၊ ထပ်လုပ်သည်",
+    "week": 5,
+    "day": 3,
+    "lesson": "日本語クラス"
   },
   {
     "id": 322,
@@ -8016,7 +8767,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "consumption"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 2",
+    "myanmarMeaning": "ကုန်ကျစရိတ်၊ သုံးစွဲသည်",
+    "week": 3,
+    "day": 2,
+    "lesson": "消費期限"
   },
   {
     "id": 323,
@@ -8037,7 +8792,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "person on duty"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 5",
+    "myanmarMeaning": "နံပါတ်/အရေအတွက်၊ အလှည့်၊ စောင့်ကြည့်သည်",
+    "week": 1,
+    "day": 5,
+    "lesson": "特急電車"
   },
   {
     "id": 324,
@@ -8058,7 +8817,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "tragedy"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဝမ်းနည်းသော၊ ဝမ်းနည်းမှု"
   },
   {
     "id": 325,
@@ -8079,7 +8839,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "writing"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ရေးဆွဲတံ၊ ရေးသားခြင်း"
   },
   {
     "id": 326,
@@ -8100,7 +8861,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "equipment"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 1",
+    "myanmarMeaning": "ပြင်ဆင်သည်၊ တပ်ဆင်သည်",
+    "week": 2,
+    "day": 1,
+    "lesson": "レストラン"
   },
   {
     "id": 327,
@@ -8121,7 +8886,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "trading company"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 4",
+    "myanmarMeaning": "ကုန်သွယ်မှု၊ ကုန်သွယ်ရေး",
+    "week": 6,
+    "day": 4,
+    "lesson": "経済"
   },
   {
     "id": 328,
@@ -8142,7 +8911,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "unreasonable"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 1",
+    "myanmarMeaning": "ဘာမျှမရှိ၊ မရှိဘဲ",
+    "week": 1,
+    "day": 1,
+    "lesson": "駐車場"
   },
   {
     "id": 329,
@@ -8163,7 +8936,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "information"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 1",
+    "myanmarMeaning": "အစီရင်ခံစာ၊ သတင်းပေးသည်၊ ဆုလာဘ်",
+    "week": 6,
+    "day": 1,
+    "lesson": "天気予報"
   },
   {
     "id": 330,
@@ -8184,7 +8961,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "full capacity"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 1",
+    "myanmarMeaning": "ပြည့်သော၊ ကျေနပ်စေသည်",
+    "week": 1,
+    "day": 1,
+    "lesson": "駐車場"
   },
   {
     "id": 331,
@@ -8205,7 +8986,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "weight"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 3",
+    "myanmarMeaning": "ပမာဏ၊ ပမာဏ",
+    "week": 3,
+    "day": 3,
+    "lesson": "自動販売機"
   },
   {
     "id": 332,
@@ -8226,7 +9011,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "amusement park"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 3",
+    "myanmarMeaning": "ကစားသည်၊ အပန်းဖြေသွားသည်",
+    "week": 2,
+    "day": 3,
+    "lesson": "観光地図"
   },
   {
     "id": 333,
@@ -8247,7 +9036,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "failure in a course"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ကျသည်၊ ကျသည်၊ မအောင်မြင်သည်"
   },
   {
     "id": 334,
@@ -8268,7 +9058,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "unmarried"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "တစ်ယောက်တည်း၊ လွတ်လပ်သော"
   },
   {
     "id": 335,
@@ -8289,7 +9080,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "cheerful"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "နေ၊ အပြုသဘော"
   },
   {
     "id": 336,
@@ -8310,7 +9102,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "word"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အရွက်"
   },
   {
     "id": 337,
@@ -8331,7 +9124,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "consumption tax"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 3",
+    "myanmarMeaning": "အခွန်",
+    "week": 4,
+    "day": 3,
+    "lesson": "通信販売"
   },
   {
     "id": 338,
@@ -8352,7 +9149,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "route"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 5",
+    "myanmarMeaning": "လမ်း၊ လမ်းကြောင်း",
+    "week": 1,
+    "day": 5,
+    "lesson": "特急電車"
   },
   {
     "id": 339,
@@ -8373,7 +9174,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "abundant"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ကြွယ်ဝသော၊ ကြွယ်ဝသော"
   },
   {
     "id": 340,
@@ -8394,7 +9196,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "absorbed"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အိပ်မက်"
   },
   {
     "id": 341,
@@ -8415,7 +9218,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "farmer"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "စိုက်ပျိုးရေး၊ လယ်ယာလုပ်ငန်း"
   },
   {
     "id": 342,
@@ -8436,7 +9240,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "consecutive"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 6",
+    "myanmarMeaning": "ဆက်လက်သည်၊ လိုက်သည်",
+    "week": 3,
+    "day": 6,
+    "lesson": "携帯電話"
   },
   {
     "id": 343,
@@ -8457,7 +9265,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "damage"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဆုံးရှုံးမှု၊ ပျက်စီးမှု"
   },
   {
     "id": 344,
@@ -8478,7 +9287,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "impression"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 5 / Day 2",
+    "myanmarMeaning": "အတွေး၊ အတွေးအမြင်၊ စိတ်ကူးသည်",
+    "week": 5,
+    "day": 2,
+    "lesson": "アンケート"
   },
   {
     "id": 345,
@@ -8499,7 +9312,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "challenge"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 4",
+    "myanmarMeaning": "စစ်ပွဲ၊ တိုက်ပွဲ၊ ယှဉ်ပြိုင်သည်",
+    "week": 6,
+    "day": 4,
+    "lesson": "経済"
   },
   {
     "id": 346,
@@ -8520,7 +9337,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "posture"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အား၊ အရှိန်"
   },
   {
     "id": 347,
@@ -8541,7 +9359,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "number of people"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 5",
+    "myanmarMeaning": "နံပါတ်/အရေအတွက်၊ ရေတွက်သည်",
+    "week": 3,
+    "day": 5,
+    "lesson": "コピー機・留守番電話"
   },
   {
     "id": 348,
@@ -8562,7 +9384,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "position"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "နေရာ၊ ထားသည်"
   },
   {
     "id": 349,
@@ -8583,7 +9406,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "subway"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 4",
+    "myanmarMeaning": "သံ၊ ရထားလမ်း",
+    "week": 1,
+    "day": 4,
+    "lesson": "駅のホーム"
   },
   {
     "id": 350,
@@ -8604,7 +9431,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "deep emotion"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 5 / Day 2",
+    "myanmarMeaning": "ခံစားချက်၊ အာရုံခံစားမှု",
+    "week": 5,
+    "day": 2,
+    "lesson": "アンケート"
   },
   {
     "id": 351,
@@ -8625,7 +9456,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "solution"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 2",
+    "myanmarMeaning": "ဖြေရှင်းသည်၊ နားလည်သည်",
+    "week": 2,
+    "day": 2,
+    "lesson": "禁煙"
   },
   {
     "id": 352,
@@ -8646,7 +9481,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "zoo"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 3",
+    "myanmarMeaning": "ဥယျာဉ်၊ ပန်းခြံ",
+    "week": 2,
+    "day": 3,
+    "lesson": "観光地図"
   },
   {
     "id": 353,
@@ -8667,7 +9506,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "romantic love"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ချစ်ခြင်း၊ ချစ်ခင်မှု"
   },
   {
     "id": 354,
@@ -8688,7 +9528,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "table salt"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 1",
+    "myanmarMeaning": "ဆား",
+    "week": 4,
+    "day": 1,
+    "lesson": "日用品"
   },
   {
     "id": 355,
@@ -8709,7 +9553,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "proactive"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အစွန်းရောက်၊ ဝင်ရိုး"
   },
   {
     "id": 356,
@@ -8730,7 +9575,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to resist"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ပြောင်းပြန်၊ ဆန့်ကျင်ဘက်"
   },
   {
     "id": 357,
@@ -8751,7 +9597,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "no smoking"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 1",
+    "myanmarMeaning": "တားမြစ်သည်၊ တားမြစ်သည်",
+    "week": 1,
+    "day": 1,
+    "lesson": "駐車場"
   },
   {
     "id": 358,
@@ -8772,7 +9622,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "guilt or offense"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ရာဇဝတ်မှု၊ အပြစ်"
   },
   {
     "id": 359,
@@ -8793,7 +9644,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "qualification"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အရင်းအမြစ်များ၊ အရင်းအနှီး"
   },
   {
     "id": 360,
@@ -8814,7 +9666,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "standard"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 1",
+    "myanmarMeaning": "စံနှုန်း၊ ပြင်ဆင်မှု",
+    "week": 2,
+    "day": 1,
+    "lesson": "レストラン"
   },
   {
     "id": 361,
@@ -8835,7 +9691,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "seed"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အမျိုးအစား၊ မျိုးစေ့"
   },
   {
     "id": 362,
@@ -8856,7 +9713,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "complicated"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အမျိုးမျိုး၊ ရောနှောသော"
   },
   {
     "id": 363,
@@ -8877,7 +9735,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "actual"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 5",
+    "myanmarMeaning": "အခါသမယ၊ နယ်နိမိတ်",
+    "week": 6,
+    "day": 5,
+    "lesson": "地球温暖化"
   },
   {
     "id": 364,
@@ -8898,7 +9760,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "budget"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "တွက်ချက်သည်"
   },
   {
     "id": 365,
@@ -8919,7 +9782,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "police"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 6",
+    "myanmarMeaning": "စောင့်ကြည့်သည်၊ ဆုံးဖြတ်သည်",
+    "week": 2,
+    "day": 6,
+    "lesson": "困ったときは"
   },
   {
     "id": 366,
@@ -8940,7 +9807,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "composition"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဖွဲ့စည်းပုံ၊ တည်ဆောက်သည်"
   },
   {
     "id": 367,
@@ -8961,7 +9829,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "interest"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 1",
+    "myanmarMeaning": "ဆက်ဆံရေး၊ ဆက်စပ်မှု",
+    "week": 1,
+    "day": 1,
+    "lesson": "駐車場"
   },
   {
     "id": 368,
@@ -8982,7 +9854,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "national border"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "နယ်နိမိတ်၊ ပတ်ဝန်းကျင်"
   },
   {
     "id": 369,
@@ -9003,7 +9876,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "fisherman"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ငါးဖမ်းလုပ်ငန်း"
   },
   {
     "id": 370,
@@ -9024,7 +9898,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "lecture"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဖျော်ဖြေ/ဆောင်ရွက်သည်၊ လက်ရှိ"
   },
   {
     "id": 371,
@@ -9045,7 +9920,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "habit"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အသားကျလာသည်"
   },
   {
     "id": 372,
@@ -9066,7 +9942,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "storage"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "စီမံသည်၊ ပိုက်"
   },
   {
     "id": 373,
@@ -9087,7 +9964,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "bronze statue"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ကြေးနီ"
   },
   {
     "id": 374,
@@ -9108,7 +9986,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to be suitable"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 5 / Day 3",
+    "myanmarMeaning": "သင့်တော်သော၊ သင့်တော်သော",
+    "week": 5,
+    "day": 3,
+    "lesson": "日本語クラス"
   },
   {
     "id": 375,
@@ -9129,7 +10011,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "precise"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "စိတ်ဓာတ်၊ သန့်စင်သော"
   },
   {
     "id": 376,
@@ -9150,7 +10033,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "made in Japan"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 2",
+    "myanmarMeaning": "ထုတ်လုပ်သည်၊ ထုတ်လုပ်သော",
+    "week": 3,
+    "day": 2,
+    "lesson": "消費期限"
   },
   {
     "id": 377,
@@ -9171,7 +10058,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "calm"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "တိတ်ဆိတ်သော၊ တည်ငြိမ်သော"
   },
   {
     "id": 378,
@@ -9192,7 +10080,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "Buddhist statue"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ပုံရိပ်၊ ရုပ်တု"
   },
   {
     "id": 379,
@@ -9213,7 +10102,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "increase"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 3",
+    "myanmarMeaning": "တိုးသည်",
+    "week": 3,
+    "day": 3,
+    "lesson": "自動販売機"
   },
   {
     "id": 380,
@@ -9234,7 +10127,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "prime minister"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "စုစုပေါင်း၊ ယေဘုယျ"
   },
   {
     "id": 381,
@@ -9255,7 +10149,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "runny nose"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 5",
+    "myanmarMeaning": "နှာခေါင်း",
+    "week": 2,
+    "day": 5,
+    "lesson": "病院"
   },
   {
     "id": 382,
@@ -9276,7 +10174,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "multiple"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အများအပြား၊ ရှုပ်ထွေးသော"
   },
   {
     "id": 383,
@@ -9297,7 +10196,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to ring"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အသံ၊ ငိုသည်"
   },
   {
     "id": 384,
@@ -9318,7 +10218,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "cotton fabric"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ဝါ"
   },
   {
     "id": 385,
@@ -9339,7 +10240,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "customer"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 2",
+    "myanmarMeaning": "ပုံပန်းသဏ္ဌာန်၊ ပုံစံ/အမူအရာ",
+    "week": 2,
+    "day": 2,
+    "lesson": "禁煙"
   },
   {
     "id": 386,
@@ -9360,7 +10265,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "field or domain"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "နယ်မြေ၊ နယ်ပယ်"
   },
   {
     "id": 387,
@@ -9381,7 +10287,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "green tea"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 1",
+    "myanmarMeaning": "အစိမ်းရောင်",
+    "week": 4,
+    "day": 1,
+    "lesson": "日用品"
   },
   {
     "id": 388,
@@ -9402,7 +10312,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "training"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 5 / Day 3",
+    "myanmarMeaning": "လေ့ကျင့်မှု၊ မွမ်းမံသည်",
+    "week": 5,
+    "day": 3,
+    "lesson": "日本語クラス"
   },
   {
     "id": 389,
@@ -9423,7 +10337,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "résumé"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "သမိုင်း၊ အလုပ်သက်တမ်း"
   },
   {
     "id": 390,
@@ -9444,7 +10359,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "wheel"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "လက်စွပ်/စက်ဝိုင်း၊ ဘီး"
   },
   {
     "id": 391,
@@ -9465,7 +10381,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to knit"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "တည်းဖြတ်သည်၊ စုစည်းပြုစုသည်၊ ထိုးသည်"
   },
   {
     "id": 392,
@@ -9486,7 +10403,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "trash can"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 3",
+    "myanmarMeaning": "သေတ္တာ",
+    "week": 1,
+    "day": 3,
+    "lesson": "サイン"
   },
   {
     "id": 393,
@@ -9507,7 +10428,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "enthusiastic"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အပူ၊ အဖျား"
   },
   {
     "id": 394,
@@ -9528,7 +10450,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "athlete"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 5 / Day 3",
+    "myanmarMeaning": "ရွေးချယ်သည်၊ ရွေးချယ်သည်",
+    "week": 5,
+    "day": 3,
+    "lesson": "日本語クラス"
   },
   {
     "id": 395,
@@ -9549,7 +10475,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "route"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 4",
+    "myanmarMeaning": "လိုင်း/မျဉ်း၊ လမ်းကြောင်း",
+    "week": 1,
+    "day": 4,
+    "lesson": "駅のホーム"
   },
   {
     "id": 396,
@@ -9570,7 +10500,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "to guide"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "လမ်းညွှန်သည်၊ ဦးဆောင်သည်"
   },
   {
     "id": 397,
@@ -9591,7 +10522,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "formal talks"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "စကားပြောသည်၊ ဆွေးနွေးသည်"
   },
   {
     "id": 398,
@@ -9612,7 +10544,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "survey"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 5 / Day 2",
+    "myanmarMeaning": "စုံစမ်းစစ်ဆေးသည်၊ အခြေအနေ",
+    "week": 5,
+    "day": 2,
+    "lesson": "アンケート"
   },
   {
     "id": 399,
@@ -9633,7 +10569,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "pedestrian crossing"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 2",
+    "myanmarMeaning": "ဘက်/နံဘေး၊ အလျားလိုက်",
+    "week": 1,
+    "day": 2,
+    "lesson": "横断歩道"
   },
   {
     "id": 400,
@@ -9654,7 +10594,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "accurate"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 1 / Day 2",
+    "myanmarMeaning": "သေချာသော၊ အတည်ပြုသည်",
+    "week": 1,
+    "day": 2,
+    "lesson": "横断歩道"
   },
   {
     "id": 401,
@@ -9675,7 +10619,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "section manager"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 2",
+    "myanmarMeaning": "အပိုင်း၊ သင်ခန်းစာ",
+    "week": 6,
+    "day": 2,
+    "lesson": "求人広告"
   },
   {
     "id": 402,
@@ -9696,7 +10644,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "musical instrument"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ထည့်စရာဘူး၊ တူရိယာ/ကိရိယာ"
   },
   {
     "id": 403,
@@ -9717,7 +10666,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "approval or disapproval"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "သဘောတူသည်၊ ချီးမွမ်းသည်"
   },
   {
     "id": 404,
@@ -9738,7 +10688,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "prize money"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 2",
+    "myanmarMeaning": "ဆု၊ ဆု",
+    "week": 3,
+    "day": 2,
+    "lesson": "消費期限"
   },
   {
     "id": 405,
@@ -9759,7 +10713,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "opportunity"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 3",
+    "myanmarMeaning": "စက်၊ အခွင့်အရေး",
+    "week": 3,
+    "day": 3,
+    "lesson": "自動販売機"
   },
   {
     "id": 406,
@@ -9780,7 +10738,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "pedestrian bridge"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 4",
+    "myanmarMeaning": "တံတား",
+    "week": 2,
+    "day": 4,
+    "lesson": "街の地図"
   },
   {
     "id": 407,
@@ -9801,7 +10763,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "area"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "စုဆောင်းသည်၊ တင်သည်"
   },
   {
     "id": 408,
@@ -9822,7 +10785,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "import"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 4",
+    "myanmarMeaning": "သယ်ယူပို့ဆောင်သည်၊ သွင်းကုန်/ပို့ကုန်",
+    "week": 6,
+    "day": 4,
+    "lesson": "経済"
   },
   {
     "id": 409,
@@ -9843,7 +10810,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "audio recording"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 3 / Day 6",
+    "myanmarMeaning": "မှတ်တမ်း",
+    "week": 3,
+    "day": 6,
+    "lesson": "携帯電話"
   },
   {
     "id": 410,
@@ -9864,7 +10835,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "achievement"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အောင်မြင်မှု၊ ရလဒ်များ"
   },
   {
     "id": 411,
@@ -9885,7 +10857,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "course"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ပို့ချချက်"
   },
   {
     "id": 412,
@@ -9906,7 +10879,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "employment"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 2",
+    "myanmarMeaning": "အလုပ်၊ အလုပ်အကိုင်",
+    "week": 6,
+    "day": 2,
+    "lesson": "求人広告"
   },
   {
     "id": 413,
@@ -9927,7 +10904,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "audience"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 3",
+    "myanmarMeaning": "ကြည့်ရှုသည်၊ စောင့်ကြည့်သည်",
+    "week": 2,
+    "day": 3,
+    "lesson": "観光地図"
   },
   {
     "id": 414,
@@ -9948,7 +10929,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "forehead"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 4 / Day 5",
+    "myanmarMeaning": "ပမာဏ၊ forehead",
+    "week": 4,
+    "day": 5,
+    "lesson": "注文"
   },
   {
     "id": 415,
@@ -9969,7 +10954,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "humankind"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အမျိုးအစား၊ အမျိုးအစား"
   },
   {
     "id": 416,
@@ -9990,7 +10976,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "application form"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 2 / Day 2",
+    "myanmarMeaning": "ဆန္ဒပြုသည်၊ တောင်းဆိုမှု",
+    "week": 2,
+    "day": 2,
+    "lesson": "禁煙"
   },
   {
     "id": 417,
@@ -10011,7 +11001,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "awareness"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "အသိပညာ၊ သိမြင်မှု"
   },
   {
     "id": 418,
@@ -10032,7 +11023,8 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "sporting event"
       }
     ],
-    "category": "JLPT N3"
+    "category": "JLPT N3",
+    "myanmarMeaning": "ယှဉ်ပြိုင်သည်"
   },
   {
     "id": 419,
@@ -10053,6 +11045,10 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "discussion"
       }
     ],
-    "category": "JLPT N3"
+    "category": "Week 6 / Day 5",
+    "myanmarMeaning": "ဆွေးနွေးမှု၊ ဆွေးနွေးစဉ်းစားမှု",
+    "week": 6,
+    "day": 5,
+    "lesson": "地球温暖化"
   }
 ];
