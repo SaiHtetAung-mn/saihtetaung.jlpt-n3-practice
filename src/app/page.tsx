@@ -42,6 +42,12 @@ function isMyanmarPhone(value: string) {
   return /^09\d{7,9}$/.test(value);
 }
 
+function maskPhone(value: string) {
+  if (value.length <= 5) return value;
+
+  return `${value.slice(0, 3)}${'*'.repeat(Math.max(value.length - 6, 3))}${value.slice(-3)}`;
+}
+
 function getEligibleIndices(mode: StudyMode, week: number) {
   return kanjiCards
     .map((card, index) => ({ card, index }))
@@ -66,6 +72,12 @@ export default function Home() {
   const deckPosition = useRef(0);
   const [phone, setPhone] = useState('');
   const [authError, setAuthError] = useState('');
+  const [loggedInPhone, setLoggedInPhone] = useState(() => {
+    if (typeof window === 'undefined') return '';
+
+    const storedPhone = normalizePhone(window.localStorage.getItem('n3-auth-phone') ?? '');
+    return registeredPhoneSet.has(storedPhone) ? storedPhone : '';
+  });
   const [authenticated, setAuthenticated] = useState(() => {
     if (typeof window === 'undefined') return false;
 
@@ -110,6 +122,7 @@ export default function Home() {
 
     window.localStorage.setItem('n3-auth-phone', normalizedPhone);
     setAuthError('');
+    setLoggedInPhone(normalizedPhone);
     setAuthenticated(true);
   }
 
@@ -117,6 +130,7 @@ export default function Home() {
     window.localStorage.removeItem('n3-auth-phone');
     setPhone('');
     setAuthError('');
+    setLoggedInPhone('');
     setAuthenticated(false);
   }
 
@@ -189,7 +203,7 @@ export default function Home() {
 
   if (!authenticated) {
     return (
-      <main className="min-h-screen overflow-hidden bg-[#f6f4ef] text-[#242824]">
+      <main className="min-h-screen overflow-x-hidden bg-[#f6f4ef] text-[#242824]">
         <div className="paper-grid pointer-events-none fixed inset-0 opacity-60" />
         <div className="relative mx-auto flex min-h-screen max-w-[720px] flex-col justify-center px-5 py-8">
           <div className="auth-panel">
@@ -235,11 +249,11 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen overflow-hidden bg-[#f6f4ef] text-[#242824]">
+    <main className="min-h-screen overflow-x-hidden bg-[#f6f4ef] text-[#242824]">
       <div className="paper-grid pointer-events-none fixed inset-0 opacity-60" />
-      <div className="relative mx-auto flex min-h-screen max-w-[1440px] flex-col px-5 py-5 sm:px-8 lg:px-14">
-        <header className="flex items-center justify-between border-b border-[#d9d7cf] pb-5">
-          <div className="flex items-center gap-3">
+      <div className="app-shell relative mx-auto flex min-h-screen max-w-[1440px] flex-col px-5 py-5 sm:px-8 lg:px-14">
+        <header className="app-header flex items-center justify-between border-b border-[#d9d7cf] pb-5">
+          <div className="brand-lockup flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#d75b3f] text-white shadow-sm">
               <BookOpen size={18} />
             </div>
@@ -250,7 +264,11 @@ export default function Home() {
               <h1 className="font-serif text-xl font-semibold tracking-tight">Kanji practice</h1>
             </div>
           </div>
-          <div className="flex items-center gap-4 text-sm">
+          <div className="header-actions flex items-center gap-4 text-sm">
+            <span className="session-phone" aria-label="Signed in phone number">
+              <Phone size={14} />
+              {maskPhone(loggedInPhone)}
+            </span>
             <span className="hidden text-[#777a72] sm:block">
               Session <strong className="text-[#242824]">{reviewed.length} / {kanjiCards.length}</strong>
             </span>
@@ -263,8 +281,8 @@ export default function Home() {
           </div>
         </header>
 
-        <section className="grid flex-1 items-center gap-10 py-10 lg:grid-cols-[minmax(260px,0.7fr)_minmax(500px,1.45fr)_minmax(190px,0.55fr)] lg:gap-16 lg:py-16">
-          <div className="order-2 lg:order-1">
+        <section className="study-grid grid flex-1 items-center gap-10 py-10 lg:grid-cols-[minmax(260px,0.7fr)_minmax(500px,1.45fr)_minmax(190px,0.55fr)] lg:gap-16 lg:py-16">
+          <div className="intro-panel order-2 lg:order-1">
             <p className="eyebrow">Today&apos;s study</p>
             <h2 className="mt-4 max-w-xs font-serif text-4xl leading-[1.02] tracking-tight sm:text-5xl">
               A little every day.
@@ -314,7 +332,7 @@ export default function Home() {
           </div>
 
           <div className="order-1 lg:order-2">
-            <div className="mb-4 flex items-center justify-between font-mono text-[11px] uppercase tracking-[0.16em] text-[#85877f]">
+            <div className="card-meta mb-4 flex items-center justify-between font-mono text-[11px] uppercase tracking-[0.16em] text-[#85877f]">
               <span>Card {String(card.id).padStart(3, '0')}</span>
               <span>{card.lesson ? `${card.category} / ${card.lesson}` : card.category}</span>
             </div>
@@ -332,8 +350,8 @@ export default function Home() {
                   <span className="absolute bottom-8 text-xs text-[#96988f]">Tap to reveal</span>
                 </>
               ) : (
-                <div className="flex h-full w-full flex-col items-center justify-center px-7 py-12 text-center sm:px-10">
-                  <span className="mb-4 font-serif text-7xl text-[#d75b3f]">{card.character}</span>
+                <div className="revealed-content flex h-full w-full flex-col items-center justify-center px-7 py-12 text-center sm:px-10">
+                  <span className="revealed-kanji mb-4 font-serif text-7xl text-[#d75b3f]">{card.character}</span>
                   <span className="max-w-full text-wrap font-mono text-lg text-[#30362f]">{card.meaning}</span>
                   <span className="mt-2 text-sm leading-6 text-[#5f665d]">{card.myanmarMeaning}</span>
                   <span className="mt-3 text-sm text-[#7c8078]">{card.readings}</span>
@@ -354,7 +372,7 @@ export default function Home() {
                 <Volume2 size={17} className="text-[#aaa9a1]" />
               </span>
             </button>
-            <div className="mt-5 flex items-center justify-between">
+            <div className="card-nav mt-5 flex items-center justify-between">
               <button
                 onClick={() => moveCard(-1)}
                 className="text-button"
@@ -374,7 +392,7 @@ export default function Home() {
           <aside className="order-3 border-t border-[#d9d7cf] pt-7 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0">
             <p className="eyebrow">How did it feel?</p>
             <p className="mt-3 text-sm leading-6 text-[#777a72]">Reveal the card, then choose a pace.</p>
-            <div className="mt-6 grid grid-cols-2 gap-2 lg:grid-cols-1">
+            <div className="rating-grid mt-6 grid grid-cols-2 gap-2 lg:grid-cols-1">
               <button onClick={() => rate('again')} className="rate-button">
                 <X size={15} />
                 <span>
@@ -407,9 +425,9 @@ export default function Home() {
           </aside>
         </section>
 
-        <footer className="flex flex-col gap-4 border-t border-[#d9d7cf] py-5 text-xs text-[#85877f] sm:flex-row sm:items-center sm:justify-between">
+        <footer className="app-footer flex flex-col gap-4 border-t border-[#d9d7cf] py-5 text-xs text-[#85877f] sm:flex-row sm:items-center sm:justify-between">
           <span className="font-mono uppercase tracking-[0.15em]">N3 / {kanjiCards.length} characters</span>
-          <div className="flex items-center gap-5">
+          <div className="footer-actions flex items-center gap-5">
             <span>Progress is saved locally</span>
             <span className="hidden h-1 w-1 rounded-full bg-[#b5b5ad] sm:block" />
             <span className="flex items-center gap-1">
