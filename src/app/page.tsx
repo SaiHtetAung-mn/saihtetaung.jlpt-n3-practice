@@ -428,6 +428,8 @@ export default function Home() {
         <footer className="app-footer flex flex-col gap-4 border-t border-[#d9d7cf] py-5 text-xs text-[#85877f] sm:flex-row sm:items-center sm:justify-between">
           <span className="font-mono uppercase tracking-[0.15em]">N3 / {kanjiCards.length} characters</span>
           <div className="footer-actions flex items-center gap-5">
+            <span>All rights reserved sha.jlpt-n3-practice</span>
+            <span className="hidden h-1 w-1 rounded-full bg-[#b5b5ad] sm:block" />
             <span>Progress is saved locally</span>
             <span className="hidden h-1 w-1 rounded-full bg-[#b5b5ad] sm:block" />
             <span className="flex items-center gap-1">
