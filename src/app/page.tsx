@@ -282,7 +282,7 @@ export default function Home() {
         </header>
 
         <section className="study-grid grid flex-1 items-center gap-10 py-10 lg:grid-cols-[minmax(260px,0.7fr)_minmax(500px,1.45fr)_minmax(190px,0.55fr)] lg:gap-16 lg:py-16">
-          <div className="intro-panel order-2 lg:order-1">
+          <div className="intro-panel order-3 lg:order-1">
             <p className="eyebrow">Today&apos;s study</p>
             <h2 className="mt-4 max-w-xs font-serif text-4xl leading-[1.02] tracking-tight sm:text-5xl">
               A little every day.
@@ -389,7 +389,7 @@ export default function Home() {
             </div>
           </div>
 
-          <aside className="order-3 border-t border-[#d9d7cf] pt-7 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0">
+          <aside className="review-panel order-2 border-t border-[#d9d7cf] pt-7 lg:order-3 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0">
             <p className="eyebrow">How did it feel?</p>
             <p className="mt-3 text-sm leading-6 text-[#777a72]">Reveal the card, then choose a pace.</p>
             <div className="rating-grid mt-6 grid grid-cols-2 gap-2 lg:grid-cols-1">
