@@ -7,6 +7,7 @@ import {
   ChevronLeft,
   ChevronRight,
   LogOut,
+  Menu,
   Phone,
   RotateCcw,
   Shuffle,
@@ -14,45 +15,23 @@ import {
   Volume2,
   X,
 } from 'lucide-react';
-import { kanjiCards } from '@/data/kanji';
+import { deckKinds, type DeckKind, studyDecks } from '@/data/studyDecks';
 import { registeredPhones } from '@/data/registeredPhones';
+import { isMyanmarPhone, maskPhone, normalizePhone } from '@/lib/phone';
 
 type Rating = 'again' | 'hard' | 'good' | 'easy';
-type StudyMode = 'all' | 'week';
-
-const weekOptions = Array.from(
-  new Set(kanjiCards.map((card) => card.week).filter((week): week is number => Boolean(week))),
-).sort((first, second) => first - second);
+type StudyMode = 'all' | 'group';
+type ReviewedState = Record<DeckKind, string[]>;
 
 const registeredPhoneSet = new Set(registeredPhones.map(normalizePhone));
 
-function normalizePhone(value: string) {
-  const westernDigits = value.replace(/[၀-၉]/g, (digit) =>
-    String('၀၁၂၃၄၅၆၇၈၉'.indexOf(digit)),
-  );
-  const digits = westernDigits.replace(/\D/g, '');
+function readReviewedState(): ReviewedState {
+  if (typeof window === 'undefined') return { kanji: [], vocab: [] };
 
-  if (digits.startsWith('959')) return `0${digits.slice(2)}`;
-  if (digits.startsWith('09')) return digits;
-
-  return digits;
-}
-
-function isMyanmarPhone(value: string) {
-  return /^09\d{7,9}$/.test(value);
-}
-
-function maskPhone(value: string) {
-  if (value.length <= 5) return value;
-
-  return `${value.slice(0, 3)}${'*'.repeat(Math.max(value.length - 6, 3))}${value.slice(-3)}`;
-}
-
-function getEligibleIndices(mode: StudyMode, week: number) {
-  return kanjiCards
-    .map((card, index) => ({ card, index }))
-    .filter(({ card }) => mode === 'all' || card.week === week)
-    .map(({ index }) => index);
+  return {
+    kanji: JSON.parse(window.localStorage.getItem('n3-reviewed-kanji') ?? '[]'),
+    vocab: JSON.parse(window.localStorage.getItem('n3-reviewed-vocab') ?? '[]'),
+  };
 }
 
 function shuffleCards(startIndex: number, eligibleIndices: number[]) {
@@ -68,7 +47,7 @@ function shuffleCards(startIndex: number, eligibleIndices: number[]) {
 
 export default function Home() {
   const navigationLocked = useRef(false);
-  const deck = useRef<number[] | null>(null);
+  const deckOrder = useRef<number[] | null>(null);
   const deckPosition = useRef(0);
   const [phone, setPhone] = useState('');
   const [authError, setAuthError] = useState('');
@@ -84,26 +63,45 @@ export default function Home() {
     const storedPhone = window.localStorage.getItem('n3-auth-phone');
     return storedPhone ? registeredPhoneSet.has(normalizePhone(storedPhone)) : false;
   });
+  const [activeDeckKind, setActiveDeckKind] = useState<DeckKind>('kanji');
   const [current, setCurrent] = useState(0);
   const [studyMode, setStudyMode] = useState<StudyMode>('all');
-  const [selectedWeek, setSelectedWeek] = useState(weekOptions[0] ?? 1);
+  const [selectedGroup, setSelectedGroup] = useState(1);
   const [revealed, setRevealed] = useState(false);
-  const [reviewed, setReviewed] = useState<number[]>(() => {
-    if (typeof window === 'undefined') return [];
-
-    const stored = window.localStorage.getItem('n3-reviewed');
-    return stored ? JSON.parse(stored) : [];
-  });
+  const [reviewed, setReviewed] = useState<ReviewedState>(readReviewedState);
   const [streak, setStreak] = useState(4);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const card = kanjiCards[current];
-  const activeIndices = useMemo(() => getEligibleIndices(studyMode, selectedWeek), [selectedWeek, studyMode]);
-  const activeCardIds = useMemo(
-    () => new Set(activeIndices.map((index) => kanjiCards[index].id)),
-    [activeIndices],
+  const activeDeck = studyDecks[activeDeckKind];
+  const groupOptions = useMemo(
+    () =>
+      Array.from(
+        new Set(activeDeck.cards.map((card) => card.group).filter((group): group is number => Boolean(group))),
+      ).sort((first, second) => first - second),
+    [activeDeck],
   );
-  const activeReviewed = reviewed.filter((id) => activeCardIds.has(id)).length;
-  const progress = Math.round((activeReviewed / activeIndices.length) * 100);
+  const activeGroup = groupOptions.includes(selectedGroup) ? selectedGroup : (groupOptions[0] ?? 1);
+  const activeIndices = useMemo(
+    () =>
+      activeDeck.cards
+        .map((card, index) => ({ card, index }))
+        .filter(({ card }) => studyMode === 'all' || card.group === activeGroup)
+        .map(({ index }) => index),
+    [activeDeck, activeGroup, studyMode],
+  );
+  const card = activeDeck.cards[current] ?? activeDeck.cards[0];
+  const vocabLengthClass =
+    activeDeckKind === 'vocab' && card.prompt.length > 42
+      ? 'is-extra-long'
+      : activeDeckKind === 'vocab' && card.prompt.length > 24
+        ? 'is-long'
+        : '';
+  const activeCardIds = useMemo(
+    () => new Set(activeIndices.map((index) => activeDeck.cards[index].id)),
+    [activeDeck, activeIndices],
+  );
+  const activeReviewed = reviewed[activeDeckKind].filter((id) => activeCardIds.has(id)).length;
+  const progress = activeIndices.length ? Math.round((activeReviewed / activeIndices.length) * 100) : 0;
 
   function login(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -134,47 +132,63 @@ export default function Home() {
     setAuthenticated(false);
   }
 
-  function restartDeck(mode = studyMode, week = selectedWeek) {
-    const eligibleIndices = getEligibleIndices(mode, week);
+  function restartDeck(mode = studyMode, group = activeGroup, deckKind = activeDeckKind) {
+    const deck = studyDecks[deckKind];
+    const eligibleIndices = deck.cards
+      .map((studyCard, index) => ({ studyCard, index }))
+      .filter(({ studyCard }) => mode === 'all' || studyCard.group === group)
+      .map(({ index }) => index);
+    // eslint-disable-next-line react-hooks/purity -- Random deck starts are intentional user-triggered behavior.
     const nextStart = eligibleIndices[Math.floor(Math.random() * eligibleIndices.length)] ?? 0;
 
-    deck.current = shuffleCards(nextStart, eligibleIndices);
+    deckOrder.current = shuffleCards(nextStart, eligibleIndices);
     deckPosition.current = 0;
     setCurrent(nextStart);
     setRevealed(false);
   }
 
-  function changeMode(mode: StudyMode) {
-    setStudyMode(mode);
-    restartDeck(mode, selectedWeek);
+  function changeDeck(deckKind: DeckKind) {
+    const deck = studyDecks[deckKind];
+    const firstGroup = deck.cards.find((studyCard) => studyCard.group)?.group ?? 1;
+
+    setActiveDeckKind(deckKind);
+    setStudyMode('all');
+    setSelectedGroup(firstGroup);
+    setMenuOpen(false);
+    restartDeck('all', firstGroup, deckKind);
   }
 
-  function changeWeek(week: number) {
-    setStudyMode('week');
-    setSelectedWeek(week);
-    restartDeck('week', week);
+  function changeMode(mode: StudyMode) {
+    setStudyMode(mode);
+    restartDeck(mode, activeGroup);
+  }
+
+  function changeGroup(group: number) {
+    setStudyMode('group');
+    setSelectedGroup(group);
+    restartDeck('group', group);
   }
 
   function moveCard(direction: 1 | -1) {
-    if (navigationLocked.current) return;
+    if (navigationLocked.current || !activeIndices.length) return;
 
     navigationLocked.current = true;
     setRevealed(false);
     setCurrent((value) => {
-      if (!deck.current) {
-        deck.current = shuffleCards(value, activeIndices);
+      if (!deckOrder.current) {
+        deckOrder.current = shuffleCards(value, activeIndices);
         deckPosition.current = 0;
       }
 
-      if (direction === 1 && deckPosition.current === deck.current.length - 1) {
-        deck.current = shuffleCards(value, activeIndices);
+      if (direction === 1 && deckPosition.current === deckOrder.current.length - 1) {
+        deckOrder.current = shuffleCards(value, activeIndices);
         deckPosition.current = 0;
       }
 
       deckPosition.current =
-        (deckPosition.current + direction + deck.current.length) % deck.current.length;
+        (deckPosition.current + direction + deckOrder.current.length) % deckOrder.current.length;
 
-      return deck.current[deckPosition.current];
+      return deckOrder.current[deckPosition.current];
     });
     window.setTimeout(() => {
       navigationLocked.current = false;
@@ -184,10 +198,11 @@ export default function Home() {
   function rate(rating: Rating) {
     if (navigationLocked.current) return;
 
-    if (!reviewed.includes(card.id)) {
-      const next = [...reviewed, card.id];
+    if (!reviewed[activeDeckKind].includes(card.id)) {
+      const nextIds = [...reviewed[activeDeckKind], card.id];
+      const next = { ...reviewed, [activeDeckKind]: nextIds };
       setReviewed(next);
-      window.localStorage.setItem('n3-reviewed', JSON.stringify(next));
+      window.localStorage.setItem(`n3-reviewed-${activeDeckKind}`, JSON.stringify(nextIds));
     }
 
     setStreak((value) => (rating === 'again' ? 0 : value + 1));
@@ -196,9 +211,9 @@ export default function Home() {
 
   function reset() {
     restartDeck();
-    setReviewed([]);
+    setReviewed((value) => ({ ...value, [activeDeckKind]: [] }));
     setStreak(0);
-    window.localStorage.removeItem('n3-reviewed');
+    window.localStorage.removeItem(`n3-reviewed-${activeDeckKind}`);
   }
 
   if (!authenticated) {
@@ -212,7 +227,7 @@ export default function Home() {
             </div>
             <div>
               <p className="eyebrow">JLPT N3 / Registered access</p>
-              <h1 className="mt-3 font-serif text-4xl leading-tight tracking-tight">JLPT N3 Kanji practice</h1>
+              <h1 className="mt-3 font-serif text-4xl leading-tight tracking-tight">JLPT N3 practice</h1>
             </div>
             <form onSubmit={login} className="mt-7 grid gap-4">
               <label className="grid gap-2 text-sm text-[#686c64]" htmlFor="phone">
@@ -254,41 +269,112 @@ export default function Home() {
       <div className="app-shell relative mx-auto flex min-h-screen max-w-[1440px] flex-col px-5 py-5 sm:px-8 lg:px-14">
         <header className="app-header flex items-center justify-between border-b border-[#d9d7cf] pb-5">
           <div className="brand-lockup flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#d75b3f] text-white shadow-sm">
+            <button
+              type="button"
+              onClick={() => setMenuOpen((value) => !value)}
+              aria-label="Open menu"
+              aria-expanded={menuOpen}
+              className="menu-button"
+            >
+              <Menu size={18} />
+            </button>
+            <div className="hidden h-10 w-10 items-center justify-center rounded-full bg-[#d75b3f] text-white shadow-sm sm:flex">
               <BookOpen size={18} />
             </div>
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-[#777a72]">
-                JLPT N3 / そうまとめ
+                {activeDeck.eyebrow}
               </p>
-              <h1 className="font-serif text-xl font-semibold tracking-tight">Kanji practice</h1>
+              <h1 className="font-serif text-xl font-semibold tracking-tight">{activeDeck.title}</h1>
             </div>
           </div>
-          <div className="header-actions flex items-center gap-4 text-sm">
-            <span className="session-phone" aria-label="Signed in phone number">
-              <Phone size={14} />
-              {maskPhone(loggedInPhone)}
-            </span>
-            <span className="hidden text-[#777a72] sm:block">
-              Session <strong className="text-[#242824]">{reviewed.length} / {kanjiCards.length}</strong>
-            </span>
-            <button onClick={reset} aria-label="Reset progress" title="Reset progress" className="icon-button">
-              <RotateCcw size={16} />
-            </button>
-            <button onClick={logout} aria-label="Sign out" title="Sign out" className="icon-button">
-              <LogOut size={16} />
-            </button>
-          </div>
+          <nav className="deck-tabs" aria-label="Practice menu">
+            {deckKinds.map((deckKind) => (
+              <button
+                key={deckKind}
+                type="button"
+                onClick={() => changeDeck(deckKind)}
+                className={activeDeckKind === deckKind ? 'is-active' : ''}
+              >
+                {studyDecks[deckKind].label}
+              </button>
+            ))}
+          </nav>
         </header>
+
+        <div className={`drawer-layer ${menuOpen ? 'is-open' : ''}`} aria-hidden={!menuOpen}>
+          <button
+            type="button"
+            className="drawer-backdrop"
+            aria-label="Close menu"
+            onClick={() => setMenuOpen(false)}
+            tabIndex={menuOpen ? 0 : -1}
+          />
+          <aside className="app-drawer" aria-label="Main menu">
+            <div className="drawer-header">
+              <div>
+                <p className="menu-section-title">Menu</p>
+                <h2>JLPT N3 Practice</h2>
+              </div>
+              <button
+                type="button"
+                onClick={() => setMenuOpen(false)}
+                aria-label="Close menu"
+                className="icon-button"
+                tabIndex={menuOpen ? 0 : -1}
+              >
+                <X size={16} />
+              </button>
+            </div>
+            <section>
+              <p className="menu-section-title">Practice</p>
+              <div className="menu-deck-grid">
+                {deckKinds.map((deckKind) => (
+                  <button
+                    key={deckKind}
+                    type="button"
+                    onClick={() => changeDeck(deckKind)}
+                    className={activeDeckKind === deckKind ? 'is-active' : ''}
+                    tabIndex={menuOpen ? 0 : -1}
+                  >
+                    {studyDecks[deckKind].label}
+                  </button>
+                ))}
+              </div>
+            </section>
+            <section>
+              <p className="menu-section-title">Account</p>
+              <div className="menu-account">
+                <span>
+                  <Phone size={14} />
+                  {maskPhone(loggedInPhone)}
+                </span>
+                <span>
+                  Session <strong>{reviewed[activeDeckKind].length} / {activeDeck.cards.length}</strong>
+                </span>
+              </div>
+              <div className="menu-actions">
+                <button type="button" onClick={reset} tabIndex={menuOpen ? 0 : -1}>
+                  <RotateCcw size={15} />
+                  Reset progress
+                </button>
+                <button type="button" onClick={logout} tabIndex={menuOpen ? 0 : -1}>
+                  <LogOut size={15} />
+                  Sign out
+                </button>
+              </div>
+            </section>
+          </aside>
+        </div>
 
         <section className="study-grid grid flex-1 items-center gap-10 py-10 lg:grid-cols-[minmax(260px,0.7fr)_minmax(500px,1.45fr)_minmax(190px,0.55fr)] lg:gap-16 lg:py-16">
           <div className="intro-panel order-3 lg:order-1">
             <p className="eyebrow">Today&apos;s study</p>
             <h2 className="mt-4 max-w-xs font-serif text-4xl leading-[1.02] tracking-tight sm:text-5xl">
-              A little every day.
+              {activeDeck.introTitle}
             </h2>
             <p className="mt-5 max-w-xs text-[15px] leading-7 text-[#686c64]">
-              Practice real N3 kanji with readings, usage words, and example sentences.
+              {activeDeck.introCopy}
             </p>
             <div className="study-panel mt-8">
               <div className="mode-tabs" aria-label="Study mode">
@@ -297,26 +383,26 @@ export default function Home() {
                   onClick={() => changeMode('all')}
                   className={studyMode === 'all' ? 'is-active' : ''}
                 >
-                  <Shuffle size={14} /> All kanji
+                  <Shuffle size={14} /> {activeDeck.allLabel}
                 </button>
                 <button
                   type="button"
-                  onClick={() => changeMode('week')}
-                  className={studyMode === 'week' ? 'is-active' : ''}
+                  onClick={() => changeMode('group')}
+                  className={studyMode === 'group' ? 'is-active' : ''}
                 >
-                  <BookOpen size={14} /> By week
+                  <BookOpen size={14} /> {activeDeck.groupLabel}
                 </button>
               </div>
-              {studyMode === 'week' ? (
+              {studyMode === 'group' ? (
                 <select
                   className="week-select"
-                  value={selectedWeek}
-                  onChange={(event) => changeWeek(Number(event.target.value))}
-                  aria-label="Select Sou Matome week"
+                  value={activeGroup}
+                  onChange={(event) => changeGroup(Number(event.target.value))}
+                  aria-label={activeDeck.groupSelectLabel}
                 >
-                  {weekOptions.map((week) => (
-                    <option key={week} value={week}>
-                      Week {week}
+                  {groupOptions.map((group) => (
+                    <option key={group} value={group}>
+                      {activeDeck.cards.find((studyCard) => studyCard.group === group)?.groupLabel ?? `Group ${group}`}
                     </option>
                   ))}
                 </select>
@@ -333,12 +419,12 @@ export default function Home() {
 
           <div className="order-1 lg:order-2">
             <div className="card-meta mb-4 flex items-center justify-between font-mono text-[11px] uppercase tracking-[0.16em] text-[#85877f]">
-              <span>Card {String(card.id).padStart(3, '0')}</span>
-              <span>{card.lesson ? `${card.category} / ${card.lesson}` : card.category}</span>
+              <span>{activeDeck.label} {String(card.sourceId).padStart(3, '0')}</span>
+              <span>{card.category}</span>
             </div>
             <button
               onClick={() => setRevealed(!revealed)}
-              className={`flashcard group ${revealed ? 'is-revealed' : ''}`}
+              className={`flashcard group ${activeDeckKind === 'vocab' ? 'is-vocab' : ''} ${revealed ? 'is-revealed' : ''}`}
               aria-label={revealed ? 'Hide answer' : 'Reveal answer'}
             >
               <div className="absolute left-7 top-7 flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.18em] text-[#9a9b94]">
@@ -346,26 +432,32 @@ export default function Home() {
               </div>
               {!revealed ? (
                 <>
-                  <span className="kanji-character">{card.character}</span>
+                  <span className={activeDeckKind === 'kanji' ? 'kanji-character' : `vocab-character ${vocabLengthClass}`}>
+                    {card.prompt}
+                  </span>
                   <span className="absolute bottom-8 text-xs text-[#96988f]">Tap to reveal</span>
                 </>
               ) : (
                 <div className="revealed-content flex h-full w-full flex-col items-center justify-center px-7 py-12 text-center sm:px-10">
-                  <span className="revealed-kanji mb-4 font-serif text-7xl text-[#d75b3f]">{card.character}</span>
-                  <span className="max-w-full text-wrap font-mono text-lg text-[#30362f]">{card.meaning}</span>
-                  <span className="mt-2 text-sm leading-6 text-[#5f665d]">{card.myanmarMeaning}</span>
-                  <span className="mt-3 text-sm text-[#7c8078]">{card.readings}</span>
+                  <span className={activeDeckKind === 'kanji' ? 'revealed-kanji mb-4 font-serif text-7xl text-[#d75b3f]' : `revealed-vocab ${vocabLengthClass} mb-4 font-serif text-5xl text-[#d75b3f]`}>
+                    {card.answerTitle}
+                  </span>
+                  {activeDeckKind === 'kanji' ? (
+                    <span className="max-w-full text-wrap font-mono text-lg text-[#30362f]">{card.meaning}</span>
+                  ) : null}
+                  <span className="myanmar-text mt-2 text-sm leading-6 text-[#5f665d]">{card.myanmarMeaning}</span>
+                  <span className="mt-3 text-sm text-[#7c8078]">{card.reading}</span>
                   <div className="mt-6 grid w-full max-w-xl gap-2 border-t border-[#dfddd5] pt-5 text-left">
-                    {card.words.slice(0, 3).map((word) => (
-                      <div key={`${card.id}-${word.word}`} className="usage-row">
-                        <span className="font-serif text-base text-[#343a33]">{word.word}</span>
-                        <span className="text-xs text-[#7c8078]">{word.reading}</span>
-                        <span className="text-xs text-[#686c64]">{word.meaning}</span>
+                    {card.details.map((detail) => (
+                      <div key={`${card.id}-${detail.primary}`} className="usage-row">
+                        <span className="font-serif text-base text-[#343a33]">{detail.primary}</span>
+                        <span className="text-xs text-[#7c8078]">{detail.secondary}</span>
+                        <span className="text-xs text-[#686c64]">{detail.tertiary}</span>
                       </div>
                     ))}
                   </div>
-                  <span className="mt-5 font-serif text-base text-[#444941]">{card.example}</span>
-                  <span className="mt-1 text-xs text-[#898c84]">{card.exampleMeaning}</span>
+                  {card.example ? <span className="mt-5 font-serif text-base text-[#444941]">{card.example}</span> : null}
+                  {card.exampleMeaning ? <span className="mt-1 text-xs text-[#898c84]">{card.exampleMeaning}</span> : null}
                 </div>
               )}
               <span className="absolute bottom-8 right-7">
@@ -373,17 +465,11 @@ export default function Home() {
               </span>
             </button>
             <div className="card-nav mt-5 flex items-center justify-between">
-              <button
-                onClick={() => moveCard(-1)}
-                className="text-button"
-              >
+              <button onClick={() => moveCard(-1)} className="text-button">
                 <ChevronLeft size={16} /> Previous
               </button>
               <span className="font-mono text-xs text-[#999b93]">{progress}% complete</span>
-              <button
-                onClick={() => moveCard(1)}
-                className="text-button"
-              >
+              <button onClick={() => moveCard(1)} className="text-button">
                 Skip <ChevronRight size={16} />
               </button>
             </div>
@@ -426,7 +512,9 @@ export default function Home() {
         </section>
 
         <footer className="app-footer flex flex-col gap-4 border-t border-[#d9d7cf] py-5 text-xs text-[#85877f] sm:flex-row sm:items-center sm:justify-between">
-          <span className="font-mono uppercase tracking-[0.15em]">N3 / {kanjiCards.length} characters</span>
+          <span className="font-mono uppercase tracking-[0.15em]">
+            N3 / {activeDeck.cards.length} {activeDeck.countLabel}
+          </span>
           <div className="footer-actions flex items-center gap-5">
             <span>All rights reserved sha.jlpt-n3-practice</span>
             <span className="hidden h-1 w-1 rounded-full bg-[#b5b5ad] sm:block" />
