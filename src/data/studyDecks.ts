@@ -43,7 +43,7 @@ const kanjiStudyCards: StudyCard[] = kanjiCards.map((card) => ({
   id: `kanji-${card.id}`,
   sourceId: card.id,
   prompt: card.character,
-  answerTitle: card.meaning,
+  answerTitle: card.character,
   meaning: card.meaning,
   myanmarMeaning: card.myanmarMeaning,
   reading: card.readings,

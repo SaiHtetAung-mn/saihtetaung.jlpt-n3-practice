@@ -443,10 +443,10 @@ export default function Home() {
                     {card.answerTitle}
                   </span>
                   {activeDeckKind === 'kanji' ? (
-                    <span className="max-w-full text-wrap font-mono text-lg text-[#30362f]">{card.meaning}</span>
+                    <span className="answer-meaning max-w-full text-wrap font-mono text-sm leading-6 text-[#30362f]">{card.meaning}</span>
                   ) : null}
-                  <span className="myanmar-text mt-2 text-sm leading-6 text-[#5f665d]">{card.myanmarMeaning}</span>
-                  <span className="mt-3 text-sm text-[#7c8078]">{card.reading}</span>
+                  <span className="myanmar-text answer-line mt-2 text-sm leading-6 text-[#5f665d]">{card.myanmarMeaning}</span>
+                  <span className="answer-line mt-3 text-sm text-[#7c8078]">{card.reading}</span>
                   <div className="mt-6 grid w-full max-w-xl gap-2 border-t border-[#dfddd5] pt-5 text-left">
                     {card.details.map((detail) => (
                       <div key={`${card.id}-${detail.primary}`} className="usage-row">
@@ -517,6 +517,10 @@ export default function Home() {
           </span>
           <div className="footer-actions flex items-center gap-5">
             <span>All rights reserved sha.jlpt-n3-practice</span>
+            <span className="hidden h-1 w-1 rounded-full bg-[#b5b5ad] sm:block" />
+            <span>
+              Kanji data: <a href="https://www.edrdg.org/wiki/index.php/KANJIDIC_Project" target="_blank" rel="noreferrer">KANJIDIC2/EDRDG</a>
+            </span>
             <span className="hidden h-1 w-1 rounded-full bg-[#b5b5ad] sm:block" />
             <span>Progress is saved locally</span>
             <span className="hidden h-1 w-1 rounded-full bg-[#b5b5ad] sm:block" />

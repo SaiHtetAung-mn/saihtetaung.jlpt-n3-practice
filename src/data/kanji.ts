@@ -830,8 +830,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "besides that"
       }
     ],
-    "category": "JLPT N3",
-    "myanmarMeaning": "အခြား၊ အခြား"
+    "category": "Week 5 / Day 5",
+    "myanmarMeaning": "အခြား၊ အခြား",
+    "week": 5,
+    "day": 5,
+    "lesson": "問診票一歯科で"
   },
   {
     "id": 30,
@@ -1736,8 +1739,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "composition"
       }
     ],
-    "category": "JLPT N3",
-    "myanmarMeaning": "ကွေးသည်၊ ကွေးကောက်မှု၊ တေးသွား"
+    "category": "Week 5 / Day 4",
+    "myanmarMeaning": "ကွေးသည်၊ ကွေးကောက်မှု၊ တေးသွား",
+    "week": 5,
+    "day": 4,
+    "lesson": "作文"
   },
   {
     "id": 62,
@@ -1958,8 +1964,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "tooth decay"
       }
     ],
-    "category": "JLPT N3",
-    "myanmarMeaning": "ပိုးကောင်၊ ပိုးကောင်"
+    "category": "Week 5 / Day 5",
+    "myanmarMeaning": "ပိုးကောင်၊ ပိုးကောင်",
+    "week": 5,
+    "day": 5,
+    "lesson": "問診票一歯科で"
   },
   {
     "id": 70,
@@ -2417,8 +2426,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "contents"
       }
     ],
-    "category": "JLPT N3",
-    "myanmarMeaning": "ခန္ဓာကိုယ်၊ မိမိကိုယ်တိုင်"
+    "category": "Week 5 / Day 6",
+    "myanmarMeaning": "ခန္ဓာကိုယ်၊ မိမိကိုယ်တိုင်",
+    "week": 5,
+    "day": 6,
+    "lesson": "問診票一健康診断"
   },
   {
     "id": 86,
@@ -2846,8 +2858,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "ruler"
       }
     ],
-    "category": "JLPT N3",
-    "myanmarMeaning": "သင်၊ အုပ်ချုပ်သူ"
+    "category": "Week 5 / Day 4",
+    "myanmarMeaning": "သင်၊ အုပ်ချုပ်သူ",
+    "week": 5,
+    "day": 4,
+    "lesson": "作文"
   },
   {
     "id": 101,
@@ -3494,8 +3509,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "politics"
       }
     ],
-    "category": "JLPT N3",
-    "myanmarMeaning": "ကုသသည်၊ ကုသသည်၊ အုပ်ချုပ်သည်"
+    "category": "Week 5 / Day 5",
+    "myanmarMeaning": "ကုသသည်၊ ကုသသည်၊ အုပ်ချုပ်သည်",
+    "week": 5,
+    "day": 5,
+    "lesson": "問診票一歯科で"
   },
   {
     "id": 124,
@@ -4412,36 +4430,6 @@ export const kanjiCards: KanjiCard[] = [
     "week": 1,
     "day": 3,
     "lesson": "サイン"
-  },
-  {
-    "id": 157,
-    "character": "利",
-    "meaning": "benefit; advantage",
-    "readings": "リ",
-    "example": "この施設は無料で利用できます。",
-    "exampleMeaning": "This facility can be used for free.",
-    "words": [
-      {
-        "word": "利用",
-        "reading": "りよう",
-        "meaning": "use"
-      },
-      {
-        "word": "利益",
-        "reading": "りえき",
-        "meaning": "profit"
-      },
-      {
-        "word": "有利",
-        "reading": "ゆうり",
-        "meaning": "advantageous"
-      }
-    ],
-    "category": "Week 4 / Day 2",
-    "myanmarMeaning": "အကျိုး၊ အကျိုးအမြတ်",
-    "week": 4,
-    "day": 2,
-    "lesson": "広告メール"
   },
   {
     "id": 158,
@@ -5757,8 +5745,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "last year"
       }
     ],
-    "category": "JLPT N3",
-    "myanmarMeaning": "ယခင်၊ မနေ့က"
+    "category": "Week 5 / Day 4",
+    "myanmarMeaning": "ယခင်၊ မနေ့က",
+    "week": 5,
+    "day": 4,
+    "lesson": "作文"
   },
   {
     "id": 204,
@@ -5784,8 +5775,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "celebration"
       }
     ],
-    "category": "JLPT N3",
-    "myanmarMeaning": "ဂုဏ်ပြုသည်၊ ဂုဏ်ပြုသည်"
+    "category": "Week 5 / Day 4",
+    "myanmarMeaning": "ဂုဏ်ပြုသည်၊ ဂုဏ်ပြုသည်",
+    "week": 5,
+    "day": 4,
+    "lesson": "作文"
   },
   {
     "id": 205,
@@ -5898,8 +5892,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "Japanese pub"
       }
     ],
-    "category": "JLPT N3",
-    "myanmarMeaning": "အရက်၊ ဂျပန်အရက်"
+    "category": "Week 5 / Day 6",
+    "myanmarMeaning": "အရက်၊ ဂျပန်အရက်",
+    "week": 5,
+    "day": 6,
+    "lesson": "問診票一健康診断"
   },
   {
     "id": 209,
@@ -6552,8 +6549,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "rest"
       }
     ],
-    "category": "JLPT N3",
-    "myanmarMeaning": "အသက်ရှူ၊ သား"
+    "category": "Week 5 / Day 6",
+    "myanmarMeaning": "အသက်ရှူ၊ သား",
+    "week": 5,
+    "day": 6,
+    "lesson": "問診票一健康診断"
   },
   {
     "id": 232,
@@ -7864,8 +7864,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "homework"
       }
     ],
-    "category": "JLPT N3",
-    "myanmarMeaning": "တည်းခိုခြင်း၊ တည်းခိုခန်း"
+    "category": "Week 5 / Day 3",
+    "myanmarMeaning": "တည်းခိုခြင်း၊ တည်းခိုခန်း",
+    "week": 5,
+    "day": 3,
+    "lesson": "日本語クラス"
   },
   {
     "id": 284,
@@ -8071,8 +8074,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "toothbrush"
       }
     ],
-    "category": "JLPT N3",
-    "myanmarMeaning": "သွား"
+    "category": "Week 5 / Day 5",
+    "myanmarMeaning": "သွား",
+    "week": 5,
+    "day": 5,
+    "lesson": "問診票一歯科で"
   },
   {
     "id": 293,
@@ -8256,8 +8262,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "result"
       }
     ],
-    "category": "JLPT N3",
-    "myanmarMeaning": "ချည်သည်၊ ဆက်သွယ်သည်၊ နိဂုံးချုပ်သည်"
+    "category": "Week 5 / Day 4",
+    "myanmarMeaning": "ချည်သည်၊ ဆက်သွယ်သည်၊ နိဂုံးချုပ်သည်",
+    "week": 5,
+    "day": 4,
+    "lesson": "作文"
   },
   {
     "id": 301,
@@ -9040,28 +9049,6 @@ export const kanjiCards: KanjiCard[] = [
     "myanmarMeaning": "ကျသည်၊ ကျသည်၊ မအောင်မြင်သည်"
   },
   {
-    "id": 334,
-    "character": "独",
-    "meaning": "alone; independent",
-    "readings": "ドク／ひとり",
-    "example": "彼は大学卒業後に独立しました。",
-    "exampleMeaning": "He became independent after graduating from university.",
-    "words": [
-      {
-        "word": "独立",
-        "reading": "どくりつ",
-        "meaning": "independence"
-      },
-      {
-        "word": "独身",
-        "reading": "どくしん",
-        "meaning": "unmarried"
-      }
-    ],
-    "category": "JLPT N3",
-    "myanmarMeaning": "တစ်ယောက်တည်း၊ လွတ်လပ်သော"
-  },
-  {
     "id": 335,
     "character": "陽",
     "meaning": "sun; positive",
@@ -9555,28 +9542,6 @@ export const kanjiCards: KanjiCard[] = [
     ],
     "category": "JLPT N3",
     "myanmarMeaning": "အစွန်းရောက်၊ ဝင်ရိုး"
-  },
-  {
-    "id": 356,
-    "character": "逆",
-    "meaning": "reverse; opposite",
-    "readings": "ギャク／さからう",
-    "example": "逆方向の電車に乗ってしまいました。",
-    "exampleMeaning": "I accidentally boarded a train going in the opposite direction.",
-    "words": [
-      {
-        "word": "逆方向",
-        "reading": "ぎゃくほうこう",
-        "meaning": "opposite direction"
-      },
-      {
-        "word": "逆らう",
-        "reading": "さからう",
-        "meaning": "to resist"
-      }
-    ],
-    "category": "JLPT N3",
-    "myanmarMeaning": "ပြောင်းပြန်၊ ဆန့်ကျင်ဘက်"
   },
   {
     "id": 357,
@@ -10428,8 +10393,11 @@ export const kanjiCards: KanjiCard[] = [
         "meaning": "enthusiastic"
       }
     ],
-    "category": "JLPT N3",
-    "myanmarMeaning": "အပူ၊ အဖျား"
+    "category": "Week 5 / Day 5",
+    "myanmarMeaning": "အပူ၊ အဖျား",
+    "week": 5,
+    "day": 5,
+    "lesson": "問診票一歯科で"
   },
   {
     "id": 394,
@@ -11050,5 +11018,1795 @@ export const kanjiCards: KanjiCard[] = [
     "week": 6,
     "day": 5,
     "lesson": "地球温暖化"
+  },
+  {
+    "id": 420,
+    "character": "困",
+    "meaning": "be troubled; difficulty",
+    "myanmarMeaning": "ဒုက္ခရောက်သည်၊ အခက်အခဲဖြစ်သည်",
+    "readings": "コン／こま・る",
+    "example": "困ったときは先生に相談してください。",
+    "exampleMeaning": "Please consult your teacher when you are in trouble.",
+    "words": [
+      {
+        "word": "困る",
+        "reading": "こまる",
+        "meaning": "to be troubled"
+      },
+      {
+        "word": "困難",
+        "reading": "こんなん",
+        "meaning": "difficulty; hardship"
+      },
+      {
+        "word": "困ったとき",
+        "reading": "こまったとき",
+        "meaning": "when in trouble"
+      }
+    ],
+    "category": "Week 2 / Day 6",
+    "week": 2,
+    "day": 6,
+    "lesson": "困ったときは"
+  },
+  {
+    "id": 421,
+    "character": "駐",
+    "meaning": "stop-over; reside in; resident",
+    "myanmarMeaning": "ကားရပ်နားခြင်း",
+    "readings": "チュウ",
+    "example": "「駐車」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"駐車\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "駐車",
+        "reading": "ちゅうしゃ",
+        "meaning": "ကားရပ်နားခြင်း"
+      }
+    ],
+    "category": "Week 1 / Day 1",
+    "week": 1,
+    "day": 1,
+    "lesson": "駐車場"
+  },
+  {
+    "id": 422,
+    "character": "押",
+    "meaning": "push; stop; check",
+    "myanmarMeaning": "တွန်းသည်၊ နှိပ်သည်",
+    "readings": "オウ／お・す・お・し-・お・っ-・お・さえる・おさ・える",
+    "example": "「押す」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"押す\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "押す",
+        "reading": "おす",
+        "meaning": "တွန်းသည်၊ နှိပ်သည်"
+      }
+    ],
+    "category": "Week 1 / Day 2",
+    "week": 1,
+    "day": 2,
+    "lesson": "横断歩道"
+  },
+  {
+    "id": 423,
+    "character": "認",
+    "meaning": "acknowledge; witness; discern",
+    "myanmarMeaning": "အတည်ပြုစစ်ဆေးခြင်း",
+    "readings": "ニン／みと・める・したた・める",
+    "example": "「確認」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"確認\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "確認",
+        "reading": "かくにん",
+        "meaning": "အတည်ပြုစစ်ဆေးခြင်း"
+      }
+    ],
+    "category": "Week 1 / Day 2",
+    "week": 1,
+    "day": 2,
+    "lesson": "横断歩道"
+  },
+  {
+    "id": 424,
+    "character": "段",
+    "meaning": "grade; steps; stairs",
+    "myanmarMeaning": "လှေကား",
+    "readings": "ダン・タン",
+    "example": "「階段」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"階段\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "階段",
+        "reading": "かいだん",
+        "meaning": "လှေကား"
+      }
+    ],
+    "category": "Week 1 / Day 3",
+    "week": 1,
+    "day": 3,
+    "lesson": "サイン"
+  },
+  {
+    "id": 425,
+    "character": "危",
+    "meaning": "dangerous; fear; uneasy",
+    "myanmarMeaning": "အန္တရာယ်",
+    "readings": "キ／あぶ・ない・あや・うい・あや・ぶむ",
+    "example": "「危険」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"危険\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "危険",
+        "reading": "きけん",
+        "meaning": "အန္တရာယ်"
+      }
+    ],
+    "category": "Week 1 / Day 3",
+    "week": 1,
+    "day": 3,
+    "lesson": "サイン"
+  },
+  {
+    "id": 426,
+    "character": "捨",
+    "meaning": "discard; throw away; abandon",
+    "myanmarMeaning": "စွန့်ပစ်သည်",
+    "readings": "シャ／す・てる",
+    "example": "「捨てる」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"捨てる\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "捨てる",
+        "reading": "すてる",
+        "meaning": "စွန့်ပစ်သည်"
+      }
+    ],
+    "category": "Week 1 / Day 3",
+    "week": 1,
+    "day": 3,
+    "lesson": "サイン"
+  },
+  {
+    "id": 427,
+    "character": "普",
+    "meaning": "universal; wide(ly); generally",
+    "myanmarMeaning": "သာမန်၊ ပုံမှန်",
+    "readings": "フ／あまね・く・あまねし",
+    "example": "「普通」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"普通\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "普通",
+        "reading": "ふつう",
+        "meaning": "သာမန်၊ ပုံမှန်"
+      }
+    ],
+    "category": "Week 1 / Day 4",
+    "week": 1,
+    "day": 4,
+    "lesson": "駅のホーム"
+  },
+  {
+    "id": 428,
+    "character": "窓",
+    "meaning": "window; pane",
+    "myanmarMeaning": "ပြတင်းပေါက်",
+    "readings": "ソウ・ス／まど・てんまど・けむだし",
+    "example": "「窓」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"窓\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "窓",
+        "reading": "まど",
+        "meaning": "ပြတင်းပေါက်"
+      }
+    ],
+    "category": "Week 1 / Day 5",
+    "week": 1,
+    "day": 5,
+    "lesson": "特急電車"
+  },
+  {
+    "id": 429,
+    "character": "整",
+    "meaning": "organize; arranging; tune",
+    "myanmarMeaning": "စီစဉ်ရှင်းလင်းခြင်း",
+    "readings": "セイ／ととの・える・ととの・う",
+    "example": "「整理」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"整理\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "整理",
+        "reading": "せいり",
+        "meaning": "စီစဉ်ရှင်းလင်းခြင်း"
+      }
+    ],
+    "category": "Week 1 / Day 6",
+    "week": 1,
+    "day": 6,
+    "lesson": "バス"
+  },
+  {
+    "id": 430,
+    "character": "券",
+    "meaning": "ticket",
+    "myanmarMeaning": "လက်မှတ်",
+    "readings": "ケン",
+    "example": "「券」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"券\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "券",
+        "reading": "けん",
+        "meaning": "လက်မှတ်"
+      }
+    ],
+    "category": "Week 1 / Day 6",
+    "week": 1,
+    "day": 6,
+    "lesson": "バス"
+  },
+  {
+    "id": 431,
+    "character": "替",
+    "meaning": "exchange; spare; substitute",
+    "myanmarMeaning": "ငွေလဲခြင်း",
+    "readings": "タイ／か・える・か・え-・か・わる",
+    "example": "「両替」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"両替\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "両替",
+        "reading": "りょうがえ",
+        "meaning": "ငွေလဲခြင်း"
+      }
+    ],
+    "category": "Week 1 / Day 6",
+    "week": 1,
+    "day": 6,
+    "lesson": "バス"
+  },
+  {
+    "id": 432,
+    "character": "優",
+    "meaning": "tenderness; excel; surpass",
+    "myanmarMeaning": "ဦးစားပေးထိုင်ခုံ",
+    "readings": "ユウ・ウ／やさ・しい・すぐ・れる・まさ・る",
+    "example": "「優先席」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"優先席\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "優先席",
+        "reading": "ゆうせんせき",
+        "meaning": "ဦးစားပေးထိုင်ခုံ"
+      }
+    ],
+    "category": "Week 1 / Day 6",
+    "week": 1,
+    "day": 6,
+    "lesson": "バス"
+  },
+  {
+    "id": 433,
+    "character": "座",
+    "meaning": "squat; seat; cushion",
+    "myanmarMeaning": "ထိုင်ခုံနေရာ",
+    "readings": "ザ／すわ・る",
+    "example": "「座席」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"座席\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "座席",
+        "reading": "ざせき",
+        "meaning": "ထိုင်ခုံနေရာ"
+      }
+    ],
+    "category": "Week 1 / Day 6",
+    "week": 1,
+    "day": 6,
+    "lesson": "バス"
+  },
+  {
+    "id": 434,
+    "character": "降",
+    "meaning": "descend; precipitate; fall",
+    "myanmarMeaning": "ဆင်းသည်",
+    "readings": "コウ・ゴ／お・りる・お・ろす・ふ・る・ふ・り・くだ・る・くだ・す",
+    "example": "「降りる」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"降りる\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "降りる",
+        "reading": "おりる",
+        "meaning": "ဆင်းသည်"
+      }
+    ],
+    "category": "Week 1 / Day 6",
+    "week": 1,
+    "day": 6,
+    "lesson": "バス"
+  },
+  {
+    "id": 435,
+    "character": "閉",
+    "meaning": "closed; shut",
+    "myanmarMeaning": "ဆိုင်ပိတ်ခြင်း",
+    "readings": "ヘイ／と・じる・と・ざす・し・める・し・まる・た・てる",
+    "example": "「閉店」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"閉店\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "閉店",
+        "reading": "へいてん",
+        "meaning": "ဆိုင်ပိတ်ခြင်း"
+      }
+    ],
+    "category": "Week 2 / Day 1",
+    "week": 2,
+    "day": 1,
+    "lesson": "レストラン"
+  },
+  {
+    "id": 436,
+    "character": "案",
+    "meaning": "plan; suggestion; draft",
+    "myanmarMeaning": "လမ်းညွှန်ခြင်း",
+    "readings": "アン／つくえ",
+    "example": "「案内」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"案内\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "案内",
+        "reading": "あんない",
+        "meaning": "လမ်းညွှန်ခြင်း"
+      }
+    ],
+    "category": "Week 2 / Day 1",
+    "week": 2,
+    "day": 1,
+    "lesson": "レストラン"
+  },
+  {
+    "id": 437,
+    "character": "煙",
+    "meaning": "smoke",
+    "myanmarMeaning": "ဆေးလိပ်မသောက်ရ",
+    "readings": "エン／けむ・る・けむり・けむ・い",
+    "example": "「禁煙」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"禁煙\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "禁煙",
+        "reading": "きんえん",
+        "meaning": "ဆေးလိပ်မသောက်ရ"
+      }
+    ],
+    "category": "Week 2 / Day 2",
+    "week": 2,
+    "day": 2,
+    "lesson": "禁煙"
+  },
+  {
+    "id": 438,
+    "character": "郵",
+    "meaning": "mail; stagecoach stop",
+    "myanmarMeaning": "စာတိုက်",
+    "readings": "ユウ",
+    "example": "「郵便局」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"郵便局\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "郵便局",
+        "reading": "ゆうびんきょく",
+        "meaning": "စာတိုက်"
+      }
+    ],
+    "category": "Week 2 / Day 4",
+    "week": 2,
+    "day": 4,
+    "lesson": "街の地図"
+  },
+  {
+    "id": 439,
+    "character": "公",
+    "meaning": "public; prince; official",
+    "myanmarMeaning": "ပန်းခြံ",
+    "readings": "コウ・ク／おおやけ",
+    "example": "「公園」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"公園\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "公園",
+        "reading": "こうえん",
+        "meaning": "ပန်းခြံ"
+      }
+    ],
+    "category": "Week 2 / Day 4",
+    "week": 2,
+    "day": 4,
+    "lesson": "街の地図"
+  },
+  {
+    "id": 440,
+    "character": "骨",
+    "meaning": "skeleton; bone; remains",
+    "myanmarMeaning": "အရိုးကျိုးခြင်း",
+    "readings": "コツ／ほね",
+    "example": "「骨折」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"骨折\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "骨折",
+        "reading": "こっせつ",
+        "meaning": "အရိုးကျိုးခြင်း"
+      }
+    ],
+    "category": "Week 2 / Day 5",
+    "week": 2,
+    "day": 5,
+    "lesson": "病院"
+  },
+  {
+    "id": 441,
+    "character": "警",
+    "meaning": "admonish; commandment",
+    "myanmarMeaning": "ရဲ",
+    "readings": "ケイ／いまし・める",
+    "example": "「警察」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"警察\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "警察",
+        "reading": "けいさつ",
+        "meaning": "ရဲ"
+      }
+    ],
+    "category": "Week 2 / Day 6",
+    "week": 2,
+    "day": 6,
+    "lesson": "困ったときは"
+  },
+  {
+    "id": 442,
+    "character": "故",
+    "meaning": "happenstance; especially; intentionally",
+    "myanmarMeaning": "မတော်တဆမှု",
+    "readings": "コ／ゆえ・ふる・い・もと",
+    "example": "「事故」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"事故\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "事故",
+        "reading": "じこ",
+        "meaning": "မတော်တဆမှု"
+      }
+    ],
+    "category": "Week 2 / Day 6",
+    "week": 2,
+    "day": 6,
+    "lesson": "困ったときは"
+  },
+  {
+    "id": 443,
+    "character": "蔵",
+    "meaning": "storehouse; hide; own",
+    "myanmarMeaning": "ရေခဲသေတ္တာ",
+    "readings": "ゾウ・ソウ／くら・おさ・める・かく・れる",
+    "example": "「冷蔵庫」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"冷蔵庫\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "冷蔵庫",
+        "reading": "れいぞうこ",
+        "meaning": "ရေခဲသေတ္တာ"
+      }
+    ],
+    "category": "Week 3 / Day 1",
+    "week": 3,
+    "day": 1,
+    "lesson": "要冷蔵"
+  },
+  {
+    "id": 444,
+    "character": "凍",
+    "meaning": "frozen; congeal; refrigerate",
+    "myanmarMeaning": "အေးခဲခြင်း",
+    "readings": "トウ／こお・る・こご・える・こご・る・い・てる・し・みる",
+    "example": "「冷凍」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"冷凍\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "冷凍",
+        "reading": "れいとう",
+        "meaning": "အေးခဲခြင်း"
+      }
+    ],
+    "category": "Week 3 / Day 1",
+    "week": 3,
+    "day": 1,
+    "lesson": "要冷蔵"
+  },
+  {
+    "id": 445,
+    "character": "召",
+    "meaning": "seduce; call; send for",
+    "myanmarMeaning": "စားသောက်သည်၏ ယဉ်ကျေးသောပြောပုံ",
+    "readings": "ショウ／め・す",
+    "example": "「召し上がる」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"召し上がる\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "召し上がる",
+        "reading": "めしあがる",
+        "meaning": "စားသောက်သည်၏ ယဉ်ကျေးသောပြောပုံ"
+      }
+    ],
+    "category": "Week 3 / Day 1",
+    "week": 3,
+    "day": 1,
+    "lesson": "要冷蔵"
+  },
+  {
+    "id": 446,
+    "character": "保",
+    "meaning": "protect; guarantee; keep",
+    "myanmarMeaning": "သိမ်းဆည်းထိန်းသိမ်းခြင်း",
+    "readings": "ホ・ホウ／たも・つ",
+    "example": "「保存」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"保存\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "保存",
+        "reading": "ほぞん",
+        "meaning": "သိမ်းဆည်းထိန်းသိမ်းခြင်း"
+      }
+    ],
+    "category": "Week 3 / Day 1",
+    "week": 3,
+    "day": 1,
+    "lesson": "要冷蔵"
+  },
+  {
+    "id": 447,
+    "character": "存",
+    "meaning": "exist; suppose; be aware of",
+    "myanmarMeaning": "ရှိနေခြင်း၊ သိမ်းဆည်းခြင်း",
+    "readings": "ソン・ゾン／ながら・える・あ・る・たも・つ・と・う",
+    "example": "「保存」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"保存\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "保存",
+        "reading": "ほぞん",
+        "meaning": "ရှိနေခြင်း၊ သိမ်းဆည်းခြင်း"
+      }
+    ],
+    "category": "Week 3 / Day 1",
+    "week": 3,
+    "day": 1,
+    "lesson": "要冷蔵"
+  },
+  {
+    "id": 448,
+    "character": "販",
+    "meaning": "marketing; sell; trade",
+    "myanmarMeaning": "ရောင်းချခြင်း",
+    "readings": "ハン",
+    "example": "「販売」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"販売\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "販売",
+        "reading": "はんばい",
+        "meaning": "ရောင်းချခြင်း"
+      }
+    ],
+    "category": "Week 3 / Day 3",
+    "week": 3,
+    "day": 3,
+    "lesson": "自動販売機"
+  },
+  {
+    "id": 449,
+    "character": "減",
+    "meaning": "dwindle; decrease; reduce",
+    "myanmarMeaning": "လျော့နည်းသည်",
+    "readings": "ゲン／へ・る・へ・らす",
+    "example": "「減る」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"減る\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "減る",
+        "reading": "へる",
+        "meaning": "လျော့နည်းသည်"
+      }
+    ],
+    "category": "Week 3 / Day 3",
+    "week": 3,
+    "day": 3,
+    "lesson": "自動販売機"
+  },
+  {
+    "id": 450,
+    "character": "卵",
+    "meaning": "egg; ovum; spawn",
+    "myanmarMeaning": "ဥ",
+    "readings": "ラン／たまご",
+    "example": "「卵」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"卵\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "卵",
+        "reading": "たまご",
+        "meaning": "ဥ"
+      }
+    ],
+    "category": "Week 3 / Day 4",
+    "week": 3,
+    "day": 4,
+    "lesson": "レシピ"
+  },
+  {
+    "id": 451,
+    "character": "乳",
+    "meaning": "milk; breasts",
+    "myanmarMeaning": "နို့",
+    "readings": "ニュウ／ちち・ち",
+    "example": "「牛乳」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"牛乳\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "牛乳",
+        "reading": "ぎゅうにゅう",
+        "meaning": "နို့"
+      }
+    ],
+    "category": "Week 3 / Day 4",
+    "week": 3,
+    "day": 4,
+    "lesson": "レシピ"
+  },
+  {
+    "id": 452,
+    "character": "粉",
+    "meaning": "flour; powder; dust",
+    "myanmarMeaning": "မှုန့်",
+    "readings": "フン／デシメートル・こ・こな",
+    "example": "「粉」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"粉\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "粉",
+        "reading": "こな",
+        "meaning": "မှုန့်"
+      }
+    ],
+    "category": "Week 3 / Day 4",
+    "week": 3,
+    "day": 4,
+    "lesson": "レシピ"
+  },
+  {
+    "id": 453,
+    "character": "袋",
+    "meaning": "sack; bag; pouch",
+    "myanmarMeaning": "အိတ်",
+    "readings": "タイ・ダイ／ふくろ",
+    "example": "「袋」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"袋\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "袋",
+        "reading": "ふくろ",
+        "meaning": "အိတ်"
+      }
+    ],
+    "category": "Week 3 / Day 4",
+    "week": 3,
+    "day": 4,
+    "lesson": "レシピ"
+  },
+  {
+    "id": 454,
+    "character": "裏",
+    "meaning": "back; amidst; in",
+    "myanmarMeaning": "နောက်ဘက်၊ အတွင်းဘက်",
+    "readings": "リ／うら",
+    "example": "「裏」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"裏\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "裏",
+        "reading": "うら",
+        "meaning": "နောက်ဘက်၊ အတွင်းဘက်"
+      }
+    ],
+    "category": "Week 3 / Day 4",
+    "week": 3,
+    "day": 4,
+    "lesson": "レシピ"
+  },
+  {
+    "id": 455,
+    "character": "濃",
+    "meaning": "concentrated; thick; dark",
+    "myanmarMeaning": "ပြင်းသော၊ ထူသော",
+    "readings": "ノウ／こ・い",
+    "example": "「濃い」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"濃い\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "濃い",
+        "reading": "こい",
+        "meaning": "ပြင်းသော၊ ထူသော"
+      }
+    ],
+    "category": "Week 3 / Day 5",
+    "week": 3,
+    "day": 5,
+    "lesson": "コピー機・留守番電話"
+  },
+  {
+    "id": 456,
+    "character": "薄",
+    "meaning": "dilute; thin; weak (tea)",
+    "myanmarMeaning": "ပါးသော၊ ပျော့သော",
+    "readings": "ハク／うす・い・うす-・-うす・うす・める・うす・まる・うす・らぐ・うす・ら-・うす・れる・すすき",
+    "example": "「薄い」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"薄い\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "薄い",
+        "reading": "うすい",
+        "meaning": "ပါးသော၊ ပျော့သော"
+      }
+    ],
+    "category": "Week 3 / Day 5",
+    "week": 3,
+    "day": 5,
+    "lesson": "コピー機・留守番電話"
+  },
+  {
+    "id": 457,
+    "character": "戻",
+    "meaning": "re-; return; revert",
+    "myanmarMeaning": "ပြန်သွားသည်",
+    "readings": "レイ／もど・す・もど・る",
+    "example": "「戻る」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"戻る\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "戻る",
+        "reading": "もどる",
+        "meaning": "ပြန်သွားသည်"
+      }
+    ],
+    "category": "Week 3 / Day 6",
+    "week": 3,
+    "day": 6,
+    "lesson": "携帯電話"
+  },
+  {
+    "id": 458,
+    "character": "了",
+    "meaning": "complete; finish",
+    "myanmarMeaning": "ပြီးဆုံးခြင်း",
+    "readings": "リョウ",
+    "example": "「完了」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"完了\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "完了",
+        "reading": "かんりょう",
+        "meaning": "ပြီးဆုံးခြင်း"
+      }
+    ],
+    "category": "Week 3 / Day 6",
+    "week": 3,
+    "day": 6,
+    "lesson": "携帯電話"
+  },
+  {
+    "id": 459,
+    "character": "砂",
+    "meaning": "sand",
+    "myanmarMeaning": "သကြား",
+    "readings": "サ・シャ／すな",
+    "example": "「砂糖」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"砂糖\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "砂糖",
+        "reading": "さとう",
+        "meaning": "သကြား"
+      }
+    ],
+    "category": "Week 4 / Day 1",
+    "week": 4,
+    "day": 1,
+    "lesson": "日用品"
+  },
+  {
+    "id": 460,
+    "character": "紅",
+    "meaning": "crimson; deep red",
+    "myanmarMeaning": "လက်ဖက်ရည်အနက်",
+    "readings": "コウ・ク／べに・くれない・あか・い",
+    "example": "「紅茶」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"紅茶\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "紅茶",
+        "reading": "こうちゃ",
+        "meaning": "လက်ဖက်ရည်အနက်"
+      }
+    ],
+    "category": "Week 4 / Day 1",
+    "week": 4,
+    "day": 1,
+    "lesson": "日用品"
+  },
+  {
+    "id": 461,
+    "character": "冊",
+    "meaning": "tome; counter for books; volume",
+    "myanmarMeaning": "စာအုပ်ရေတွက်ပုံ",
+    "readings": "サツ・サク／ふみ",
+    "example": "「一冊」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"一冊\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "一冊",
+        "reading": "いっさつ",
+        "meaning": "စာအုပ်ရေတွက်ပုံ"
+      }
+    ],
+    "category": "Week 4 / Day 1",
+    "week": 4,
+    "day": 1,
+    "lesson": "日用品"
+  },
+  {
+    "id": 462,
+    "character": "枚",
+    "meaning": "sheet of...; counter for flat thin objects or sheets",
+    "myanmarMeaning": "ပါးလွှာသောအရာရေတွက်ပုံ",
+    "readings": "マイ・バイ",
+    "example": "「一枚」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"一枚\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "一枚",
+        "reading": "いちまい",
+        "meaning": "ပါးလွှာသောအရာရေတွက်ပုံ"
+      }
+    ],
+    "category": "Week 4 / Day 1",
+    "week": 4,
+    "day": 1,
+    "lesson": "日用品"
+  },
+  {
+    "id": 463,
+    "character": "割",
+    "meaning": "proportion; comparatively; divide",
+    "myanmarMeaning": "လျှော့ဈေး",
+    "readings": "カツ／わ・る・わり・わ・り・わ・れる・さ・く",
+    "example": "「割引」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"割引\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "割引",
+        "reading": "わりびき",
+        "meaning": "လျှော့ဈေး"
+      }
+    ],
+    "category": "Week 4 / Day 2",
+    "week": 4,
+    "day": 2,
+    "lesson": "広告メール"
+  },
+  {
+    "id": 464,
+    "character": "値",
+    "meaning": "price; cost; value",
+    "myanmarMeaning": "ဈေးနှုန်း",
+    "readings": "チ／ね・あたい",
+    "example": "「値段」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"値段\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "値段",
+        "reading": "ねだん",
+        "meaning": "ဈေးနှုန်း"
+      }
+    ],
+    "category": "Week 4 / Day 2",
+    "week": 4,
+    "day": 2,
+    "lesson": "広告メール"
+  },
+  {
+    "id": 465,
+    "character": "払",
+    "meaning": "pay; clear out; prune",
+    "myanmarMeaning": "ငွေပေးချေသည်",
+    "readings": "フツ・ヒツ・ホツ／はら・う・-はら・い・-ばら・い",
+    "example": "「支払う」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"支払う\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "支払う",
+        "reading": "しはらう",
+        "meaning": "ငွေပေးချေသည်"
+      }
+    ],
+    "category": "Week 4 / Day 2",
+    "week": 4,
+    "day": 2,
+    "lesson": "広告メール"
+  },
+  {
+    "id": 466,
+    "character": "米",
+    "meaning": "rice; USA; metre",
+    "myanmarMeaning": "ဆန်",
+    "readings": "ベイ・マイ・メエトル／こめ・よね",
+    "example": "「米」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"米\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "米",
+        "reading": "こめ",
+        "meaning": "ဆန်"
+      }
+    ],
+    "category": "Week 4 / Day 3",
+    "week": 4,
+    "day": 3,
+    "lesson": "通信販売"
+  },
+  {
+    "id": 467,
+    "character": "込",
+    "meaning": "crowded; mixture; in bulk",
+    "myanmarMeaning": "လျှောက်ထားခြင်း",
+    "readings": "-こ・む・こ・む・こ・み・-こ・み・こ・める",
+    "example": "「申込」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"申込\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "申込",
+        "reading": "もうしこみ",
+        "meaning": "လျှောက်ထားခြင်း"
+      }
+    ],
+    "category": "Week 4 / Day 3",
+    "week": 4,
+    "day": 3,
+    "lesson": "通信販売"
+  },
+  {
+    "id": 468,
+    "character": "価",
+    "meaning": "value; price",
+    "myanmarMeaning": "ဈေးနှုန်း",
+    "readings": "カ・ケ／あたい",
+    "example": "「価格」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"価格\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "価格",
+        "reading": "かかく",
+        "meaning": "ဈေးနှုန်း"
+      }
+    ],
+    "category": "Week 4 / Day 3",
+    "week": 4,
+    "day": 3,
+    "lesson": "通信販売"
+  },
+  {
+    "id": 469,
+    "character": "齢",
+    "meaning": "age",
+    "myanmarMeaning": "အသက်အရွယ်",
+    "readings": "レイ／よわい・とし",
+    "example": "「年齢」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"年齢\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "年齢",
+        "reading": "ねんれい",
+        "meaning": "အသက်အရွယ်"
+      }
+    ],
+    "category": "Week 4 / Day 4",
+    "week": 4,
+    "day": 4,
+    "lesson": "申込書"
+  },
+  {
+    "id": 470,
+    "character": "歳",
+    "meaning": "year-end; age; occasion",
+    "myanmarMeaning": "အသက်နှစ်",
+    "readings": "サイ・セイ／とし・とせ・よわい",
+    "example": "「歳」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"歳\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "歳",
+        "reading": "さい",
+        "meaning": "အသက်နှစ်"
+      }
+    ],
+    "category": "Week 4 / Day 4",
+    "week": 4,
+    "day": 4,
+    "lesson": "申込書"
+  },
+  {
+    "id": 471,
+    "character": "絡",
+    "meaning": "entwine; coil around; get caught in",
+    "myanmarMeaning": "ဆက်သွယ်ခြင်း",
+    "readings": "ラク／から・む・から・まる",
+    "example": "「連絡」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"連絡\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "連絡",
+        "reading": "れんらく",
+        "meaning": "ဆက်သွယ်ခြင်း"
+      }
+    ],
+    "category": "Week 4 / Day 4",
+    "week": 4,
+    "day": 4,
+    "lesson": "申込書"
+  },
+  {
+    "id": 472,
+    "character": "届",
+    "meaning": "deliver; reach; arrive",
+    "myanmarMeaning": "ရောက်ရှိသည်",
+    "readings": "カイ／とど・ける・-とど・け・とど・く",
+    "example": "「届く」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"届く\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "届く",
+        "reading": "とどく",
+        "meaning": "ရောက်ရှိသည်"
+      }
+    ],
+    "category": "Week 4 / Day 5",
+    "week": 4,
+    "day": 5,
+    "lesson": "注文"
+  },
+  {
+    "id": 473,
+    "character": "宅",
+    "meaning": "home; house; residence",
+    "myanmarMeaning": "မိမိအိမ်",
+    "readings": "タク",
+    "example": "「自宅」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"自宅\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "自宅",
+        "reading": "じたく",
+        "meaning": "မိမိအိမ်"
+      }
+    ],
+    "category": "Week 4 / Day 5",
+    "week": 4,
+    "day": 5,
+    "lesson": "注文"
+  },
+  {
+    "id": 474,
+    "character": "換",
+    "meaning": "interchange; period; change",
+    "myanmarMeaning": "လဲလှယ်ခြင်း",
+    "readings": "カン／か・える・-か・える・か・わる",
+    "example": "「交換」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"交換\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "交換",
+        "reading": "こうかん",
+        "meaning": "လဲလှယ်ခြင်း"
+      }
+    ],
+    "category": "Week 4 / Day 5",
+    "week": 4,
+    "day": 5,
+    "lesson": "注文"
+  },
+  {
+    "id": 475,
+    "character": "預",
+    "meaning": "deposit; custody; leave with",
+    "myanmarMeaning": "အပ်နှံထားသည်ကို လက်ခံထိန်းသိမ်းသည်",
+    "readings": "ヨ／あず・ける・あず・かる",
+    "example": "「預かる」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"預かる\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "預かる",
+        "reading": "あずかる",
+        "meaning": "အပ်နှံထားသည်ကို လက်ခံထိန်းသိမ်းသည်"
+      }
+    ],
+    "category": "Week 4 / Day 6",
+    "week": 4,
+    "day": 6,
+    "lesson": "不在通知"
+  },
+  {
+    "id": 476,
+    "character": "衣",
+    "meaning": "garment; clothes; dressing",
+    "myanmarMeaning": "အဝတ်အစားများ",
+    "readings": "イ・エ／ころも・きぬ・-ぎ",
+    "example": "「衣類」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"衣類\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "衣類",
+        "reading": "いるい",
+        "meaning": "အဝတ်အစားများ"
+      }
+    ],
+    "category": "Week 4 / Day 6",
+    "week": 4,
+    "day": 6,
+    "lesson": "不在通知"
+  },
+  {
+    "id": 477,
+    "character": "勤",
+    "meaning": "diligence; become employed; serve",
+    "myanmarMeaning": "အလုပ်သွားလာခြင်း",
+    "readings": "キン・ゴン／つと・める・-づと・め・つと・まる・いそ・しむ",
+    "example": "「通勤」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"通勤\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "通勤",
+        "reading": "つうきん",
+        "meaning": "အလုပ်သွားလာခြင်း"
+      }
+    ],
+    "category": "Week 4 / Day 6",
+    "week": 4,
+    "day": 6,
+    "lesson": "不在通知"
+  },
+  {
+    "id": 478,
+    "character": "伺",
+    "meaning": "pay respects; visit; ask",
+    "myanmarMeaning": "မေးမြန်းသည်၊ သွားရောက်သည်၏ ယဉ်ကျေးသောပြောပုံ",
+    "readings": "シ／うかが・う",
+    "example": "「伺う」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"伺う\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "伺う",
+        "reading": "うかがう",
+        "meaning": "မေးမြန်းသည်၊ သွားရောက်သည်၏ ယဉ်ကျေးသောပြောပုံ"
+      }
+    ],
+    "category": "Week 5 / Day 1",
+    "week": 5,
+    "day": 1,
+    "lesson": "メールを送る"
+  },
+  {
+    "id": 479,
+    "character": "遅",
+    "meaning": "slow; late; back",
+    "myanmarMeaning": "နောက်ကျသည်",
+    "readings": "チ／おく・れる・おく・らす・おそ・い",
+    "example": "「遅れる」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"遅れる\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "遅れる",
+        "reading": "おくれる",
+        "meaning": "နောက်ကျသည်"
+      }
+    ],
+    "category": "Week 5 / Day 1",
+    "week": 5,
+    "day": 1,
+    "lesson": "メールを送る"
+  },
+  {
+    "id": 480,
+    "character": "汗",
+    "meaning": "sweat; perspire",
+    "myanmarMeaning": "ချွေး",
+    "readings": "カン／あせ",
+    "example": "「汗」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"汗\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "汗",
+        "reading": "あせ",
+        "meaning": "ချွေး"
+      }
+    ],
+    "category": "Week 5 / Day 1",
+    "week": 5,
+    "day": 1,
+    "lesson": "メールを送る"
+  },
+  {
+    "id": 481,
+    "character": "涙",
+    "meaning": "tears; sympathy",
+    "myanmarMeaning": "မျက်ရည်",
+    "readings": "ルイ・レイ／なみだ",
+    "example": "「涙」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"涙\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "涙",
+        "reading": "なみだ",
+        "meaning": "မျက်ရည်"
+      }
+    ],
+    "category": "Week 5 / Day 1",
+    "week": 5,
+    "day": 1,
+    "lesson": "メールを送る"
+  },
+  {
+    "id": 482,
+    "character": "難",
+    "meaning": "difficult; impossible; trouble",
+    "myanmarMeaning": "ခက်ခဲသော",
+    "readings": "ナン／かた・い・-がた・い・むずか・しい・むづか・しい・むつか・しい・-にく・い",
+    "example": "「難しい」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"難しい\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "難しい",
+        "reading": "むずかしい",
+        "meaning": "ခက်ခဲသော"
+      }
+    ],
+    "category": "Week 5 / Day 2",
+    "week": 5,
+    "day": 2,
+    "lesson": "アンケート"
+  },
+  {
+    "id": 483,
+    "character": "簡",
+    "meaning": "simplicity; brevity",
+    "myanmarMeaning": "လွယ်ကူသော",
+    "readings": "カン・ケン／えら・ぶ・ふだ",
+    "example": "「簡単」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"簡単\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "簡単",
+        "reading": "かんたん",
+        "meaning": "လွယ်ကူသော"
+      }
+    ],
+    "category": "Week 5 / Day 2",
+    "week": 5,
+    "day": 2,
+    "lesson": "アンケート"
+  },
+  {
+    "id": 484,
+    "character": "違",
+    "meaning": "difference; differ",
+    "myanmarMeaning": "ကွဲပြားသည်၊ မှားသည်",
+    "readings": "イ／ちが・う・ちが・い・ちが・える・-ちが・える・たが・う・たが・える",
+    "example": "「違う」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"違う\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "違う",
+        "reading": "ちがう",
+        "meaning": "ကွဲပြားသည်၊ မှားသည်"
+      }
+    ],
+    "category": "Week 5 / Day 3",
+    "week": 5,
+    "day": 3,
+    "lesson": "日本語クラス"
+  },
+  {
+    "id": 485,
+    "character": "辞",
+    "meaning": "resign; word; term",
+    "myanmarMeaning": "အဘိဓာန်",
+    "readings": "ジ／や・める・いな・む",
+    "example": "「辞書」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"辞書\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "辞書",
+        "reading": "じしょ",
+        "meaning": "အဘိဓာန်"
+      }
+    ],
+    "category": "Week 5 / Day 3",
+    "week": 5,
+    "day": 3,
+    "lesson": "日本語クラス"
+  },
+  {
+    "id": 486,
+    "character": "婚",
+    "meaning": "marriage",
+    "myanmarMeaning": "လက်ထပ်ခြင်း",
+    "readings": "コン",
+    "example": "「結婚」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"結婚\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "結婚",
+        "reading": "けっこん",
+        "meaning": "လက်ထပ်ခြင်း"
+      }
+    ],
+    "category": "Week 5 / Day 4",
+    "week": 5,
+    "day": 4,
+    "lesson": "作文"
+  },
+  {
+    "id": 487,
+    "character": "奥",
+    "meaning": "heart; interior",
+    "myanmarMeaning": "ဇနီး၊ အတွင်းဘက်",
+    "readings": "オウ／おく・おく・まる・くま",
+    "example": "「奥さん」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"奥さん\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "奥さん",
+        "reading": "おくさん",
+        "meaning": "ဇနီး၊ အတွင်းဘက်"
+      }
+    ],
+    "category": "Week 5 / Day 4",
+    "week": 5,
+    "day": 4,
+    "lesson": "作文"
+  },
+  {
+    "id": 488,
+    "character": "寝",
+    "meaning": "lie down; sleep; rest",
+    "myanmarMeaning": "အိပ်သည်",
+    "readings": "シン／ね・る・ね・かす・い・ぬ・みたまや・や・める",
+    "example": "「寝る」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"寝る\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "寝る",
+        "reading": "ねる",
+        "meaning": "အိပ်သည်"
+      }
+    ],
+    "category": "Week 5 / Day 4",
+    "week": 5,
+    "day": 4,
+    "lesson": "作文"
+  },
+  {
+    "id": 489,
+    "character": "痛",
+    "meaning": "pain; hurt; damage",
+    "myanmarMeaning": "နာသော",
+    "readings": "ツウ／いた・い・いた・む・いた・ましい・いた・める",
+    "example": "「痛い」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"痛い\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "痛い",
+        "reading": "いたい",
+        "meaning": "နာသော"
+      }
+    ],
+    "category": "Week 5 / Day 5",
+    "week": 5,
+    "day": 5,
+    "lesson": "問診票一歯科で"
+  },
+  {
+    "id": 490,
+    "character": "汚",
+    "meaning": "dirty; pollute; disgrace",
+    "myanmarMeaning": "ညစ်ပတ်သော",
+    "readings": "オ／けが・す・けが・れる・けが・らわしい・よご・す・よご・れる・きたな・い",
+    "example": "「汚い」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"汚い\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "汚い",
+        "reading": "きたない",
+        "meaning": "ညစ်ပတ်သော"
+      }
+    ],
+    "category": "Week 5 / Day 5",
+    "week": 5,
+    "day": 5,
+    "lesson": "問診票一歯科で"
+  },
+  {
+    "id": 491,
+    "character": "並",
+    "meaning": "row; and; besides",
+    "myanmarMeaning": "တန်းစီသည်",
+    "readings": "ヘイ・ホウ／な・み・なみ・なら・べる・なら・ぶ・なら・びに",
+    "example": "「並ぶ」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"並ぶ\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "並ぶ",
+        "reading": "ならぶ",
+        "meaning": "တန်းစီသည်"
+      }
+    ],
+    "category": "Week 5 / Day 5",
+    "week": 5,
+    "day": 5,
+    "lesson": "問診票一歯科で"
+  },
+  {
+    "id": 492,
+    "character": "吸",
+    "meaning": "suck; imbibe; inhale",
+    "myanmarMeaning": "ရှူသည်၊ စုပ်သည်",
+    "readings": "キュウ／す・う",
+    "example": "「吸う」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"吸う\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "吸う",
+        "reading": "すう",
+        "meaning": "ရှူသည်၊ စုပ်သည်"
+      }
+    ],
+    "category": "Week 5 / Day 6",
+    "week": 5,
+    "day": 6,
+    "lesson": "問診票一健康診断"
+  },
+  {
+    "id": 493,
+    "character": "欲",
+    "meaning": "longing; covetousness; greed",
+    "myanmarMeaning": "လိုချင်သော",
+    "readings": "ヨク／ほっ・する・ほ・しい",
+    "example": "「欲しい」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"欲しい\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "欲しい",
+        "reading": "ほしい",
+        "meaning": "လိုချင်သော"
+      }
+    ],
+    "category": "Week 5 / Day 6",
+    "week": 5,
+    "day": 6,
+    "lesson": "問診票一健康診断"
+  },
+  {
+    "id": 494,
+    "character": "眠",
+    "meaning": "sleep; die; sleepy",
+    "myanmarMeaning": "အိပ်ချင်သော",
+    "readings": "ミン／ねむ・る・ねむ・い",
+    "example": "「眠い」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"眠い\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "眠い",
+        "reading": "ねむい",
+        "meaning": "အိပ်ချင်သော"
+      }
+    ],
+    "category": "Week 5 / Day 6",
+    "week": 5,
+    "day": 6,
+    "lesson": "問診票一健康診断"
+  },
+  {
+    "id": 495,
+    "character": "疲",
+    "meaning": "exhausted; tire; weary",
+    "myanmarMeaning": "ပင်ပန်းသည်",
+    "readings": "ヒ／つか・れる・-づか・れ・つか・らす",
+    "example": "「疲れる」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"疲れる\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "疲れる",
+        "reading": "つかれる",
+        "meaning": "ပင်ပန်းသည်"
+      }
+    ],
+    "category": "Week 5 / Day 6",
+    "week": 5,
+    "day": 6,
+    "lesson": "問診票一健康診断"
+  },
+  {
+    "id": 496,
+    "character": "呼",
+    "meaning": "call; call out to; invite",
+    "myanmarMeaning": "ခေါ်သည်",
+    "readings": "コ／よ・ぶ",
+    "example": "「呼ぶ」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"呼ぶ\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "呼ぶ",
+        "reading": "よぶ",
+        "meaning": "ခေါ်သည်"
+      }
+    ],
+    "category": "Week 5 / Day 6",
+    "week": 5,
+    "day": 6,
+    "lesson": "問診票一健康診断"
+  },
+  {
+    "id": 497,
+    "character": "晴",
+    "meaning": "clear up",
+    "myanmarMeaning": "ရာသီဥတုကြည်လင်ခြင်း",
+    "readings": "セイ／は・れる・は・れ・は・れ-・-ば・れ・は・らす",
+    "example": "「晴れ」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"晴れ\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "晴れ",
+        "reading": "はれ",
+        "meaning": "ရာသီဥတုကြည်လင်ခြင်း"
+      }
+    ],
+    "category": "Week 6 / Day 1",
+    "week": 6,
+    "day": 1,
+    "lesson": "天気予報"
+  },
+  {
+    "id": 498,
+    "character": "吹",
+    "meaning": "blow; breathe; puff",
+    "myanmarMeaning": "မှုတ်သည်၊ တိုက်သည်",
+    "readings": "スイ／ふ・く",
+    "example": "「吹く」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"吹く\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "吹く",
+        "reading": "ふく",
+        "meaning": "မှုတ်သည်၊ တိုက်သည်"
+      }
+    ],
+    "category": "Week 6 / Day 1",
+    "week": 6,
+    "day": 1,
+    "lesson": "天気予報"
+  },
+  {
+    "id": 499,
+    "character": "暖",
+    "meaning": "warmth",
+    "myanmarMeaning": "နွေးထွေးသော",
+    "readings": "ダン・ノン／あたた・か・あたた・かい・あたた・まる・あたた・める",
+    "example": "「暖かい」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"暖かい\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "暖かい",
+        "reading": "あたたかい",
+        "meaning": "နွေးထွေးသော"
+      }
+    ],
+    "category": "Week 6 / Day 1",
+    "week": 6,
+    "day": 1,
+    "lesson": "天気予報"
+  },
+  {
+    "id": 500,
+    "character": "震",
+    "meaning": "quake; shake; tremble",
+    "myanmarMeaning": "ငလျင်",
+    "readings": "シン／ふる・う・ふる・える・ふる・わせる・ふる・わす",
+    "example": "「地震」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"地震\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "地震",
+        "reading": "じしん",
+        "meaning": "ငလျင်"
+      }
+    ],
+    "category": "Week 6 / Day 1",
+    "week": 6,
+    "day": 1,
+    "lesson": "天気予報"
+  },
+  {
+    "id": 501,
+    "character": "求",
+    "meaning": "request; want; wish for",
+    "myanmarMeaning": "အလုပ်ခေါ်ယူခြင်း",
+    "readings": "キュウ・グ／もと・める",
+    "example": "「求人」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"求人\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "求人",
+        "reading": "きゅうじん",
+        "meaning": "အလုပ်ခေါ်ယူခြင်း"
+      }
+    ],
+    "category": "Week 6 / Day 2",
+    "week": 6,
+    "day": 2,
+    "lesson": "求人広告"
+  },
+  {
+    "id": 502,
+    "character": "募",
+    "meaning": "recruit; campaign; gather (contributions)",
+    "myanmarMeaning": "စုဆောင်းခေါ်ယူခြင်း",
+    "readings": "ボ／つの・る",
+    "example": "「募集」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"募集\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "募集",
+        "reading": "ぼしゅう",
+        "meaning": "စုဆောင်းခေါ်ယူခြင်း"
+      }
+    ],
+    "category": "Week 6 / Day 2",
+    "week": 6,
+    "day": 2,
+    "lesson": "求人広告"
+  },
+  {
+    "id": 503,
+    "character": "般",
+    "meaning": "carrier; carry; all",
+    "myanmarMeaning": "အထွေထွေ၊ သာမန်",
+    "readings": "ハン",
+    "example": "「一般」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"一般\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "一般",
+        "reading": "いっぱん",
+        "meaning": "အထွေထွေ၊ သာမန်"
+      }
+    ],
+    "category": "Week 6 / Day 2",
+    "week": 6,
+    "day": 2,
+    "lesson": "求人広告"
+  },
+  {
+    "id": 504,
+    "character": "済",
+    "meaning": "settle (debt, etc.); relieve (burden); finish",
+    "myanmarMeaning": "စီးပွားရေး",
+    "readings": "サイ・セイ／す・む・-ず・み・-ずみ・す・まない・す・ます・-す・ます・すく・う・な・す・わたし・わた・る",
+    "example": "「経済」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"経済\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "経済",
+        "reading": "けいざい",
+        "meaning": "စီးပွားရေး"
+      }
+    ],
+    "category": "Week 6 / Day 4",
+    "week": 6,
+    "day": 4,
+    "lesson": "経済"
+  },
+  {
+    "id": 505,
+    "character": "原",
+    "meaning": "meadow; original; primitive",
+    "myanmarMeaning": "အကြောင်းရင်း",
+    "readings": "ゲン／はら",
+    "example": "「原因」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"原因\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "原因",
+        "reading": "げんいん",
+        "meaning": "အကြောင်းရင်း"
+      }
+    ],
+    "category": "Week 6 / Day 5",
+    "week": 6,
+    "day": 5,
+    "lesson": "地球温暖化"
+  },
+  {
+    "id": 506,
+    "character": "府",
+    "meaning": "borough; urban prefecture; govt office",
+    "myanmarMeaning": "အစိုးရ",
+    "readings": "フ",
+    "example": "「政府」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"政府\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "政府",
+        "reading": "せいふ",
+        "meaning": "အစိုးရ"
+      }
+    ],
+    "category": "Week 6 / Day 6",
+    "week": 6,
+    "day": 6,
+    "lesson": "政治"
+  },
+  {
+    "id": 507,
+    "character": "否",
+    "meaning": "negate; no; noes",
+    "myanmarMeaning": "ငြင်းဆိုခြင်း",
+    "readings": "ヒ／いな・いや",
+    "example": "「否定」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"否定\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "否定",
+        "reading": "ひてい",
+        "meaning": "ငြင်းဆိုခြင်း"
+      }
+    ],
+    "category": "Week 6 / Day 6",
+    "week": 6,
+    "day": 6,
+    "lesson": "政治"
+  },
+  {
+    "id": 508,
+    "character": "専",
+    "meaning": "specialty; exclusive; mainly",
+    "myanmarMeaning": "အထူးပြုဘာသာရပ်",
+    "readings": "セン／もっぱ・ら",
+    "example": "「専門」はN3でよく使う言葉です。",
+    "exampleMeaning": "\"専門\" is a commonly used N3 word.",
+    "words": [
+      {
+        "word": "専門",
+        "reading": "せんもん",
+        "meaning": "အထူးပြုဘာသာရပ်"
+      }
+    ],
+    "category": "Week 6 / Day 6",
+    "week": 6,
+    "day": 6,
+    "lesson": "政治"
   }
 ];
