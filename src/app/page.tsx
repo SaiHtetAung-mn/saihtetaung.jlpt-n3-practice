@@ -25,13 +25,26 @@ type ReviewedState = Record<DeckKind, string[]>;
 
 const registeredPhoneSet = new Set(registeredPhones.map(normalizePhone));
 
-function readReviewedState(): ReviewedState {
-  if (typeof window === 'undefined') return { kanji: [], vocab: [] };
+function emptyReviewedState(): ReviewedState {
+  const reviewedState = {} as ReviewedState;
 
-  return {
-    kanji: JSON.parse(window.localStorage.getItem('n3-reviewed-kanji') ?? '[]'),
-    vocab: JSON.parse(window.localStorage.getItem('n3-reviewed-vocab') ?? '[]'),
-  };
+  for (const deckKind of deckKinds) {
+    reviewedState[deckKind] = [];
+  }
+
+  return reviewedState;
+}
+
+function readReviewedState(): ReviewedState {
+  const reviewedState = emptyReviewedState();
+
+  if (typeof window === 'undefined') return reviewedState;
+
+  for (const deckKind of deckKinds) {
+    reviewedState[deckKind] = JSON.parse(window.localStorage.getItem(`n3-reviewed-${deckKind}`) ?? '[]');
+  }
+
+  return reviewedState;
 }
 
 function shuffleCards(startIndex: number, eligibleIndices: number[]) {
@@ -90,17 +103,18 @@ export default function Home() {
     [activeDeck, activeGroup, studyMode],
   );
   const card = activeDeck.cards[current] ?? activeDeck.cards[0];
+  const compactPrompt = activeDeckKind !== 'kanji';
   const vocabLengthClass =
-    activeDeckKind === 'vocab' && card.prompt.length > 42
+    compactPrompt && card.prompt.length > 42
       ? 'is-extra-long'
-      : activeDeckKind === 'vocab' && card.prompt.length > 24
+      : compactPrompt && card.prompt.length > 24
         ? 'is-long'
         : '';
   const activeCardIds = useMemo(
     () => new Set(activeIndices.map((index) => activeDeck.cards[index].id)),
     [activeDeck, activeIndices],
   );
-  const activeReviewed = reviewed[activeDeckKind].filter((id) => activeCardIds.has(id)).length;
+  const activeReviewed = (reviewed[activeDeckKind] ?? []).filter((id) => activeCardIds.has(id)).length;
   const progress = activeIndices.length ? Math.round((activeReviewed / activeIndices.length) * 100) : 0;
 
   function login(event: FormEvent<HTMLFormElement>) {
@@ -198,8 +212,8 @@ export default function Home() {
   function rate(rating: Rating) {
     if (navigationLocked.current) return;
 
-    if (!reviewed[activeDeckKind].includes(card.id)) {
-      const nextIds = [...reviewed[activeDeckKind], card.id];
+    if (!(reviewed[activeDeckKind] ?? []).includes(card.id)) {
+      const nextIds = [...(reviewed[activeDeckKind] ?? []), card.id];
       const next = { ...reviewed, [activeDeckKind]: nextIds };
       setReviewed(next);
       window.localStorage.setItem(`n3-reviewed-${activeDeckKind}`, JSON.stringify(nextIds));
@@ -432,14 +446,14 @@ export default function Home() {
               </div>
               {!revealed ? (
                 <>
-                  <span className={activeDeckKind === 'kanji' ? 'kanji-character' : `vocab-character ${vocabLengthClass}`}>
+                  <span className={!compactPrompt ? 'kanji-character' : `vocab-character ${vocabLengthClass}`}>
                     {card.prompt}
                   </span>
                   <span className="absolute bottom-8 text-xs text-[#96988f]">Tap to reveal</span>
                 </>
               ) : (
                 <div className="revealed-content flex h-full w-full flex-col items-center justify-center px-7 py-12 text-center sm:px-10">
-                  <span className={activeDeckKind === 'kanji' ? 'revealed-kanji mb-4 font-serif text-7xl text-[#d75b3f]' : `revealed-vocab ${vocabLengthClass} mb-4 font-serif text-5xl text-[#d75b3f]`}>
+                  <span className={!compactPrompt ? 'revealed-kanji mb-4 font-serif text-7xl text-[#d75b3f]' : `revealed-vocab ${vocabLengthClass} mb-4 font-serif text-5xl text-[#d75b3f]`}>
                     {card.answerTitle}
                   </span>
                   {activeDeckKind === 'kanji' ? (

@@ -1,7 +1,8 @@
 import { kanjiCards } from '@/data/kanji';
+import { oldQuestionKanjiCards } from '@/data/oldQuestionKanji';
 import { vocabCards } from '@/data/vocab';
 
-export type DeckKind = 'kanji' | 'vocab';
+export type DeckKind = 'kanji' | 'vocab' | 'oldKanji';
 
 export type StudyDetail = {
   primary: string;
@@ -79,6 +80,26 @@ const vocabStudyCards: StudyCard[] = vocabCards.map((card) => ({
   ],
 }));
 
+const oldQuestionKanjiStudyCards: StudyCard[] = oldQuestionKanjiCards.map((card) => ({
+  id: `old-kanji-${card.id}`,
+  sourceId: card.id,
+  prompt: card.expression,
+  answerTitle: card.expression,
+  meaning: 'N3 old question kanji',
+  myanmarMeaning: card.myanmarMeaning,
+  reading: card.reading,
+  category: `Page ${card.page}`,
+  group: card.page,
+  groupLabel: `Page ${card.page}`,
+  details: [
+    {
+      primary: `No. ${card.id}`,
+      secondary: card.reading,
+      tertiary: card.myanmarMeaning,
+    },
+  ],
+}));
+
 export const studyDecks: Record<DeckKind, StudyDeck> = {
   kanji: {
     kind: 'kanji',
@@ -106,6 +127,19 @@ export const studyDecks: Record<DeckKind, StudyDeck> = {
     countLabel: 'words',
     cards: vocabStudyCards,
   },
+  oldKanji: {
+    kind: 'oldKanji',
+    label: 'Old Kanji',
+    title: 'Old question kanji',
+    eyebrow: 'JLPT N3 / old questions',
+    introTitle: 'Past question words.',
+    introCopy: '',
+    allLabel: 'All old kanji',
+    groupLabel: 'By page',
+    groupSelectLabel: 'Select PDF page',
+    countLabel: 'words',
+    cards: oldQuestionKanjiStudyCards,
+  },
 };
 
-export const deckKinds: DeckKind[] = ['kanji', 'vocab'];
+export const deckKinds: DeckKind[] = ['kanji', 'vocab', 'oldKanji'];
